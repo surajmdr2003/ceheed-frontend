@@ -1,1 +1,124 @@
- 
+.default-padding{
+    padding:70px 0;
+}
+
+.registernow-wrap {
+    background-image: linear-gradient(to left, #6f37bf, #b82ebf 0%);
+
+    .registernow-content {
+        text-align: center;
+        color: $color__white;
+        width: 510px;
+        margin: auto;
+
+        .register-now-title {
+            font-size: 40px;
+            font-weight: 800;
+            font-style: normal;
+            line-height: 1.25;
+            letter-spacing: normal;
+            text-align: center;
+            color: $color__white;
+            margin-bottom: 20px;
+
+            span {
+                font-size: 30px;
+            }
+        }
+
+        .text {
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 2;
+            letter-spacing: normal;
+            color: $color__white;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.footer-menu-listing {
+    border-bottom: solid 1px #f0f0f0;
+    padding-bottom: 30px;
+}
+
+.footer-menu-item {
+    .footer-title {
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 2;
+        color: #303030;
+        text-transform: capitalize;
+    }
+
+    .footer-items {
+        list-style: none;
+        padding-left: 0;
+    
+        li {
+            margin-bottom: 10px;
+    
+            a {
+                font-size: 13px;
+                font-weight: normal;
+                color: #303030;
+            }
+        } 
+    }
+}
+
+.text-style {
+    font-weight: bold;
+}
+
+.green-text {
+    color: $primary;
+}
+
+.pink-text {
+    color: $secondary;
+}
+
+.blue-text {
+    color: #6f37bf;
+}
+
+.social-share {
+    display: flex;
+    list-style: none;
+
+    li {
+        padding: 0 5px;
+    
+        a {
+            color: #594138;
+            font-size: 15px;
+        }
+    }
+}
+
+.footer-site-menu {
+    padding-left: 0;
+    display: flex;
+    list-style: none;
+
+    li {
+        padding-right: 30px;
+
+        a {
+            font-size: 12px;
+            font-weight: normal;
+            color: #707070; 
+        }
+    }
+}
+
+.copyright-section {
+    padding-bottom: 40px;
+
+    .copyright-text {
+        font-size: 12px;
+        font-weight: normal;
+        color: #707070;
+    }
+}
