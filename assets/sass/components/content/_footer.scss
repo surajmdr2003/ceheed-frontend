@@ -122,3 +122,282 @@
         color: #707070;
     }
 }
+
+// jobpage
+.brand-logo {
+	border-right: 1px solid #f1f1f1;
+	padding-right: 15px;
+}
+.main-header {
+	.navbar {
+        padding:15px;
+		li {
+			a {
+				color: #484848;
+				font-size: 13px;
+				font-weight: normal;
+			}
+			padding: 0 30px;
+		}
+	}
+}
+.site-navbar {
+	padding: 15px 15px;
+}
+.main-header {
+	.navbar {
+		li {
+			&:first-child {
+				padding-left: 15px;
+			}
+		}
+	}
+}
+.menu-profile.media {
+	h6 {
+		margin-bottom: 0;
+	}
+}
+
+
+.job-search-section {
+	background-image: linear-gradient(to left, #6f37bf, #b82ebf 0%);
+	padding: 15px 0;
+	input {
+		margin-bottom: 0 !important;
+		border-radius: 2px;
+	}
+	button[type="submit"] {
+		height: 60px;
+		min-width: 200px;
+		border-radius: 2px;
+        font-weight: bold;
+        margin-bottom: 0 !important;
+	}
+}
+.job-search-section{
+    .col {
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
+}
+.placeholder-text {
+	font-size: 14px;
+	font-weight: normal;
+	color: #5f5f5f;
+}
+
+
+// job-card
+
+.meta-tag {
+	position: absolute;
+	border-radius: 2px;
+	padding: 5px 12px;
+	top: 0;
+	left: 0;
+}
+.card.job-card {
+	padding: 40px 20px 20px;
+    display: inline-flex;
+    max-width: 370px;
+    border-radius: 2px;
+    border: solid 1px #e0e0e0;
+	.card-body {
+		padding: 0;
+		max-width: 370px;
+	}
+}
+.job-card {
+	.card-tags {
+		font-size: 12px;
+		font-weight: normal;
+		color: #303030;
+		display: inline-block;
+		margin-bottom: 5px;
+	}
+	.card-title {
+		font-size: 15px;
+		font-weight: bold;
+		color: #594138;
+		margin-bottom: 40px;
+	}
+	.card-subtitle {
+		font-size: 12px;
+		font-weight: bold;
+		color: #303030 !important;
+		margin-bottom: 10px;
+	}
+	.card-text {
+		font-size: 12px;
+		color: #707070;
+		font-weight: normal;
+        line-height: 1.67;
+        margin-bottom: 20px;
+    }
+    .card-link {
+        color: #594138;
+        font-size: 16px;
+    }    
+}
+
+.job-card.active {
+    border: solid 1px #b82ebf;
+}
+
+// jobpage main-title
+
+.job-main-header {
+	display: flex;
+	align-items: flex-end;
+    margin-bottom: 15px;
+	span {
+		display: inline-block;
+		padding-left: 20px;
+		font-weight: bold;
+		font-size: 14px;
+		color: #303030;
+	}
+}
+.job-detail-title {
+	font-weight: 800;
+	font-size: 30px;
+	color: #594138;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+// dropdown-btn
+
+.btn-dropdown {
+	border-radius: 2px;
+	background-color: #ececec;
+	font-size: 11px;
+	font-weight: normal;
+    padding: 12px 18px;
+    height:auto;
+}
+.btn-dropdown.dropdown-toggle {
+	&::after {
+		margin-left: 10px;
+	}
+}
+
+
+.job-detail-card {
+    border-radius: 2px 2px 0 0;
+    border: solid 1px #e0e0e0;
+    
+    .list-unstyled{
+        font-size:13px;
+    }
+    .card-header {
+        padding: 30px 30px 80px;
+    }
+    .card-title {
+		font-size: 20px;
+		color: #594138;
+		font-weight: bold;
+		margin-bottom: 30px;
+	}
+	.card-tags {
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
+	.card-subtitle {
+		font-size: 12px;
+		font-weight: bold;
+		color: #303030;
+		margin-bottom: 20px !important;
+    }
+    p {
+        font-size: 13px;
+        color: #0c4018;
+        margin-bottom: 30px;
+    }
+    h4 {
+        font-size: 13px;
+        color: #0c4018;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+	.btn {
+		height: 50px;
+		font-size: 14px;
+		font-weight: bold;
+		min-width: 240px;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+    }
+    .text-muted{
+        color:#303030 !important;
+    }
+    .card-body{
+        padding: 0 30px 0;
+        line-height: 2;
+    }
+}
+
+
+// bootstrap tab
+
+.nav-tabs {
+	border: 0;
+    margin-bottom: 25px;
+    margin-top: -45px;
+    margin-left: -15px;
+    margin-right: -15px;
+	.nav-link.active {
+		background: transparent;
+		border: 0;
+	}
+	.nav-item.show {
+		.nav-link {
+			background: transparent;
+			border: 0;
+		}
+	}
+	.nav-link {
+        border:0;
+        padding: 10px 0;
+        position:relative;
+		&:hover {
+			border: 0;
+		}
+		&:focus {
+            border: 0;
+            outline:none;
+		}
+	}
+	a {
+		font-size: 12px;
+		color: #808080;
+		font-weight: bold;
+	}
+}
+
+.nav-link.active {
+    position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		bottom: 0px;
+		background: #24bf49;
+		height: 2px;
+		width: 100%;
+	}
+}
+.nav-tabs {
+	.nav-link.active {
+		background: transparent;
+		border: 0;
+	}
+	.nav-item {
+		margin-bottom: -1px;
+		padding: 0;
+		margin: 0 15px;
+	}
+}
+
