@@ -6,12 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ceheed component</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header class="main-header">
         <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand brand-logo" href="#">
                 <img src="./assets/images/ceheed-logo.svg" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -101,44 +111,51 @@
             <div class="container">
                 <form class="row">
                     <div class="col">
-                        <label class="sr-only" for="jobtitle-keyword">Job title, keyword or company</label>
+                        <label class="sr-only placeholder-text" for="jobtitle-keyword">Job title, keyword or
+                            company</label>
                         <input type="text" class="form-control mb-2 mr-sm-2" id="jobtitle-keyword"
-                        placeholder="Job title, keyword or company">
+                            placeholder="Job title, keyword or company">
                     </div>
                     <div class="col">
-                        <label class="sr-only" for="location">Name</label>
-                    <input type="text" class="form-control mb-2 mr-sm-2" id="location"
-                        placeholder="City, state, zipcode, or “remote”">
+                        <label class="sr-only placeholder-text" for="location">Name</label>
+                        <input type="text" class="form-control mb-2 mr-sm-2" id="location"
+                            placeholder="City, state, zipcode, or “remote”">
                     </div>
                     <div class="col">
-                        <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                        <button type="submit" class="btn btn-primary mb-2">Search jobs</button>
                     </div>
                 </form>
             </div>
         </section>
     </header>
 
-    <div class="components-wrapper">
+    <div class="components-wrapper default-padding">
         <div class="container">
             <!-- card starts -->
-            <div class="card job-card">
-                <span class="badge badge-primary"></span>
+            <div class="card job-card active">
+                <span class="badge badge-primary meta-tag">New</span>
                 <div class="card-body">
                     <div class="card-tags">Apple Inc | Remote | Full time</div>
                     <h5 class="card-title">HealthEdge Configuration designer</h5>
                     <h6 class="card-subtitle mb-2 text-muted">$3,000 - $5,000 a month</h6>
                     <p class="card-text">We provide pre-set appointments with nice people just like you, close to your
                         home.</p>
-                    <a href="#" class="card-link"><i class="icon icon-heart"></i></a>
+                    <a href="#" class="card-link"><i class="far fa-heart"></i></a>
                 </div>
             </div>
             <!-- card ends -->
             <br /><br />
             <!-- dropdown starts -->
+            <div class="job-main-header">
+                <h1 class="job-detail-title">
+                    Designer jobs
+                </h1>
+                <span>520 jobs found</span>
+            </div>
             <div class="dropdown">
                 <button class="btn btn-dropdown dropdown-toggle" type="button" id="dropdownMenuButton"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown button
+                    Date posted
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item" href="#">Action</a>
@@ -155,7 +172,7 @@
                     <div class="card-tags">Apple Inc | Remote | Full time</div>
                     <h5 class="card-title">HealthEdge Configuration designer</h5>
                     <h6 class="card-subtitle mb-2 text-muted">$3,000 - $5,000 a month</h6>
-                    <a href="#" class="btn btn-primary">Apply at company site </a>
+                    <a href="#" class="btn btn-secondary">Apply at company site </a>
                 </div>
                 <div class="card-body">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -186,15 +203,23 @@
                                 compelling ways.</p>
 
                             <h4>REQUIREMENTS</h4>
-                            <p>A current portfolio that includes design work in a variety of products that have shipped
-                                2+ years as a UX designer, product designer, mobile designer, or similar
-                                Strong organizational and time management skills
-                                Expertly skilled at taking an ambiguous problem and seeking concrete answers
-                                Demonstrated understanding of information hierarchy and typography
-                                Ability to take initiative and move a project from inception to launch
-                                Mastery of Sketch or similar interface design tools
-                                Experience building and maintaining design pattern libraries
-                                Experience with low to medium fidelity prototyping tools</p>
+                            <ul class="list-unstyled">
+
+                                <li> A current portfolio that includes design work in a variety of products that have
+                                    shipped</li>
+                                <li> 2+ years as a UX designer, product designer, mobile designer, or similar</li>
+                                <li> Strong organizational and time management skills</li>
+                                <li> Expertly skilled at taking an ambiguous problem and seeking concrete answers</li>
+                                <li> Demonstrated understanding of information hierarchy and typography </li>
+                                <li> Ability to take initiative and move a project from inception to launch</li>
+                                <li> Mastery of Sketch or similar interface design tools</li>
+                                <li> Experience building and maintaining design pattern libraries</li>
+                                <li> Experience with low to medium fidelity prototyping tools</li>
+                                <li> Broadcast Group with dual headquarters in Seattle, WA and Hunt Valley, MD.</li>
+                                <li> a division of Sinclair headquarters in Seattle, WA and Hunt Valley, MD.</li>
+
+
+                            </ul>
                         </div>
                         <div class="tab-pane fade" id="about-compay-tab" role="tabpanel"
                             aria-labelledby="about-compay-tab">...</div>
