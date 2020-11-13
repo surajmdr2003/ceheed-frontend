@@ -1,0 +1,85 @@
+.login-page-container {
+    border-top: 1px solid $color__gray100;
+}
+
+.full-height {
+    height: calc(100vh - 71px);
+} 
+ 
+.login-form-block {
+    margin: 1.5rem 0 1.5rem;
+
+    @include desktop-up {
+        padding-right: 2.6rem;
+    }
+
+    @include tablet-portrait-up {
+
+    }
+    
+    .greeting-title {
+        margin-bottom: size(40);
+
+        h3 {
+            @include font-size(30px);
+            margin-bottom: 0;
+    
+            span {
+                @include font-size(20px);
+                margin-bottom: size(5);
+                display: inline-block;
+            }
+        }
+    }
+    .form-groups-wrapper {
+        margin-bottom: size(30);
+    }
+}
+
+
+.has-banner-image {
+    position: initial;
+
+    @include phone-only() {
+        display: none;
+    }
+    
+    .banner-image {
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 45%;
+        padding: 3rem;
+        display: flex;
+        align-items: flex-end;
+        background-size: cover;
+        background-position: center;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(to bottom, rgba(111, 55, 191, 0.2), #b82ebf);
+            z-index: 2;
+        }
+
+        @include tablet-portrait-up {
+            position: absolute;
+            width: 45%;
+        }
+        @include tablet-landscape-up {
+            width: 55%;
+        }
+
+
+        .slogan {
+            position: relative;
+            z-index: 3;
+            color: #fff;
+        }
+        
+    }
+}
