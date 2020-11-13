@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/images/ceheed-logo.svg" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse primary-navigation" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Browse jobs</a></li>
+                    <li><a href="#">Career advice</a></li>
+                    <li><a href="#">Upload your resume</a></li>
+                </ul>
+                <ul class="navbar-nav align-items-center secondary-menu">
+                    <li><i class="icon icon-notification"></i>
+                        <div class="dropdown-menu notification-dropdown-menu">
+                            <div class="notification-header">
+                                Notifications <a href="./all-notifications.html" class="btn-link">See All</a>
+                            </div>
+                            <ul class="notifications list-unstyled">
+                                <li class="media">
+                                    <span class="icon-box mr-3">
+                                        <i class="icon-bulb"></i>
+                                    </span>
+                                    <div class="media-body">
+                                        <h5>Adds responsive display ads</h5>
+                                        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                                            sollicitudin.</p>
+                                        <a href="#" class="btn-link">Notify Sales</a>
+                                    </div>
+                                </li>
+                                <li class="media">
+                                    <span class="icon-box mr-3">
+                                        <i class="icon-pause"></i>
+                                    </span>
+                                    <div class="media-body">
+                                        <h5>List-based media object</h5>
+                                        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                                            sollicitudin.</p>
+                                    </div>
+                                </li>
+                                <li class="media">
+                                    <span class="icon-box mr-3">
+                                        <i class="icon-Rectangle"></i>
+                                    </span>
+                                    <div class="media-body">
+                                        <h5>List-based media object</h5>
+                                        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                                            sollicitudin. Cras purus odio,</p>
+                                        <a href="#" class="btn-link">See Report</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-profile media">
+                            <img src="./assets/images/avatar.svg" class="profile-icon align-self-center mr-3"
+                                alt="avatar">
+                            <div class="media-body  align-self-center">
+                                <h6 class="mt-0">Midfirst Bank</h6>
+                            </div>
+                        </div>
+                        <ul class="dropdown-menu profile-dropdown-menu">
+                            <li>
+                                <a href="./login.html">Login</a>
+                            </li>
+                            <li>
+                                <a href="./your-profile.html">Profile</a>
+                            </li>
+                            <li>
+                                <a href="#">Payment setting</a>
+                            </li>
+                            <li>
+                                <a href="#">Billing history</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact us</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section class="job-search-section">
+            <div class="container">
+                <form class="row">
+                    <div class="col">
+                        <label class="sr-only" for="jobtitle-keyword">Job title, keyword or company</label>
+                        <input type="text" class="form-control mb-2 mr-sm-2" id="jobtitle-keyword"
+                            placeholder="Job title, keyword or company">
+                    </div>
+                    <div class="col">
+                        <label class="sr-only" for="location">Name</label>
+                        <input type="text" class="form-control mb-2 mr-sm-2" id="location"
+                            placeholder="City, state, zipcode, or “remote”">
+                    </div>
+                    <div class="col">
+                        <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </header>
+
+    <div class="main-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="user-profile-thumb">
+                        <img src="./assets/images/avatar.svg" alt="profile">
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="user-profile-info">
+                        <h2>Ben Shapiro</h2>
+                        <p><a href="mailto:benshapiro@gmail.com" class="mr-2">benshapiro@gmail.com</a>
+                            <a href="#">edit</a>
+                        </p>
+                    </div>
+                    <div class="user-profile-feature-block">
+                        <h3>Personal summary</h3>
+                        <p>Developed aesthetically pleasing mockups and prototypes that clearly illustrates how product
+                            looks and functions. Designed several Wordpress themes.</p>
+                    </div> <!-- user-profile-feature-block ends -->
+
+                    <div class="user-profile-feature-block career-history-block">
+                        <h3>Career history</h3>
+                        <ul>
+                            <li>
+                                <h4>Sr. UI/UX Designer</h4>
+                                <div class="meta-data">Growcept Studio | Full-time | Apr 2017 - Aug 2018 (2 yrs 4 mos)
+                                </div>
+                                <p>Developed aesthetically pleasing mockups and prototypes that clearly illustrates how
+                                    product looks and functions. Designed several Wordpress themes.</p>
+                            </li>
+                            <li>
+                                <h4>SEO Executive</h4>
+                                <div class="meta-data">Apple Inc | Remote | May 2012 - Sep 2014 (2 years 4 months)</div>
+                                <p>Worked as a SEO to increase traffic of over 50 websites. Tracked visitors behaviour
+                                    though several analytics tools and optimized conversion rates.</p>
+                            </li>
+                        </ul>
+                    </div> <!-- user-profile-feature-block ends -->
+
+                    <div class="user-profile-feature-block education-block">
+                        <h3>Education</h3>
+                        <ul>
+                            <li>
+                                <h4>Masters in IT Management</h4>
+                                <div class="meta-data">ABC University | Masters degree | Dec 2018 - Jan 2020
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. </p>
+                            </li>
+                            <li>
+                                <h4>Bachelors in Business Administration</h4>
+                                <div class="meta-data">Queensland University | Bachelors degree | May 2012 - Sep 2014
+                                </div>
+                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                    ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. </p>
+                            </li>
+                        </ul>
+                    </div> <!-- user-profile-feature-block ends -->
+
+
+                    <div class="user-profile-feature-block skill-block">
+                        <h3>Skills</h3>
+                        <span class="badge">UI Design</span>
+                        <span class="badge">User experience design</span>
+                        <span class="badge">Frontend development</span>
+                        <span class="badge">Product design</span>
+                        <span class="badge">Product management</span>
+                        <span class="badge">Adobe photoshop</span>
+                        <span class="badge">HTML/CSS/JS</span>
+                    </div> <!-- user-profile-feature-block ends -->
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="registernow-wrapper">
+        <div class="container">
+            <div class="registernow-wrap default-padding">
+                <div class="registernow-content">
+                    <div class="register-now-title">
+                        <span> WE MATCH </span> EMPLOYERS
+                        <span> WITH </span> RIGHT CANDIDATES
+                    </div>
+                    <div class="text">
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </span>
+                    </div>
+                    <a href="#" title="" class="btn register-now-btn">
+                        register now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="default-padding grey-divider">
+        <div class="container">
+            <div class="site-footer-wrapper">
+                <div class="row footer-menu-listing">
+                    <div class="footer-menu-item col-md-2">
+                        <h3 class="footer-title">
+                            About
+                        </h3>
+                        <ul class="footer-items">
+                            <li>
+                                <a href="#" title="">About <span class="text-style green-text">Ceheed</span></a>
+                            </li>
+                            <li><a href="#" title="">Careers</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-menu-item col-md-2">
+                        <h3 class="footer-title">
+                            Candidates
+                        </h3>
+                        <ul class="footer-items">
+                            <li>
+                                <a href="#" title=""> <span class="text-style  pink-text">Upload your resume</span></a>
+                            </li>
+                            <li><a href="#" title="">Browse jobs</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-menu-item col-md-2">
+                        <h3 class="footer-title">
+                            Employers
+                        </h3>
+                        <ul class="footer-items">
+                            <li>
+                                <a href="#" title=""> <span class="text-style  blue-text">Upload your resume</span></a>
+                            </li>
+                            <li><a href="#" title="">Browse jobs</a></li>
+                            <li><a href="#" title="">Hiring with Ceheed </a></li>
+                            <li><a href="#" title="">FAQ </a></li>
+                            <li><a href="#" title="">Employers support</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-menu-item col-md-2">
+                        <h3 class="footer-title">
+                            Resources
+                        </h3>
+                        <ul class="footer-items">
+                            <li><a href="#" title="">Blogs</a></li>
+                            <li><a href="#" title="">Video examples</a></li>
+                            <li><a href="#" title="">Resume tips</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-menu-item col-md-2">
+                        <h3 class="footer-title">
+                            Legal
+                        </h3>
+                        <ul class="footer-items">
+                            <li><a href="#" title="">Privacy policy</a></li>
+                            <li><a href="#" title="">Terms & conditions</a></li>
+                            <li><a href="#" title="">Disclaimers</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-menu-item col-md-2">
+                        <h3 class="footer-title">
+                            Get in touch
+                        </h3>
+                        <ul class="footer-items">
+                            <li><a href="#" title="">Contact Ceheed office </a></li>
+                            <li><a href="#" title="">Contact support</a></li>
+                        </ul>
+                    </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright-section">
+                <div class="container">
+                    <div class="copyright-content row">
+                        <div class="item copyright-text col-md-4">
+                            Copyright at Ceheed | All rights reserved
+                        </div>
+                        <div class="item col-md-6">
+                            <ul class="footer-site-menu">
+                                <li><a href="#" title="">Home</a></li>
+                                <li><a href="#" title="">Browse jobs</a></li>
+                                <li><a href="#" title="">Career advise</a></li>
+                                <li><a href="#" title="">Register</a></li>
+                                <li><a href="#" title="">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="item col-md-2">
+                            <ul class="social-share">
+                                <li><a href="#" title=""><i class="fab fa-facebook-square"></i></a></li>
+                                <li><a href="#" title=""><i class="fab fa-instagram-square"></i></a></li>
+                                <li><a href="#" title=""><i class="fab fa-twitter-square"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </footer>
+</body>
+
+</html>
