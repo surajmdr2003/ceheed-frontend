@@ -9,6 +9,115 @@
 </head>
 
 <body>
+    <header class="main-header">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/images/ceheed-logo.svg" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse primary-navigation" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Browse jobs</a></li>
+                    <li><a href="#">Career advice</a></li>
+                    <li><a href="#">Upload your resume</a></li>
+                </ul>
+                <ul class="navbar-nav align-items-center secondary-menu">
+                    <li><i class="icon icon-notification"></i>
+                        <div class="dropdown-menu notification-dropdown-menu">
+                            <div class="notification-header">
+                                Notifications <a href="./all-notifications.html" class="btn-link">See All</a>
+                            </div>
+                            <ul class="notifications list-unstyled">
+                                <li class="media">
+                                    <span class="icon-box mr-3">
+                                        <i class="icon-bulb"></i>
+                                    </span>
+                                    <div class="media-body">
+                                        <h5>Adds responsive display ads</h5>
+                                        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                                            sollicitudin.</p>
+                                        <a href="#" class="btn-link">Notify Sales</a>
+                                    </div>
+                                </li>
+                                <li class="media">
+                                    <span class="icon-box mr-3">
+                                        <i class="icon-pause"></i>
+                                    </span>
+                                    <div class="media-body">
+                                        <h5>List-based media object</h5>
+                                        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                                            sollicitudin.</p>
+                                    </div>
+                                </li>
+                                <li class="media">
+                                    <span class="icon-box mr-3">
+                                        <i class="icon-Rectangle"></i>
+                                    </span>
+                                    <div class="media-body">
+                                        <h5>List-based media object</h5>
+                                        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                                            sollicitudin. Cras purus odio,</p>
+                                        <a href="#" class="btn-link">See Report</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-profile media">
+                            <img src="./assets/images/avatar.svg" class="profile-icon align-self-center mr-3"
+                                alt="avatar">
+                            <div class="media-body  align-self-center">
+                                <h6 class="mt-0">Midfirst Bank</h6>
+                            </div>
+                        </div>
+                        <ul class="dropdown-menu profile-dropdown-menu">
+                            <li>
+                                <a href="./login.html">Login</a>
+                            </li>
+                            <li>
+                                <a href="./your-profile.html">Profile</a>
+                            </li>
+                            <li>
+                                <a href="#">Payment setting</a>
+                            </li>
+                            <li>
+                                <a href="#">Billing history</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact us</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section class="job-search-section">
+            <div class="container">
+                <form class="row">
+                    <div class="col">
+                        <label class="sr-only" for="jobtitle-keyword">Job title, keyword or company</label>
+                        <input type="text" class="form-control mb-2 mr-sm-2" id="jobtitle-keyword"
+                        placeholder="Job title, keyword or company">
+                    </div>
+                    <div class="col">
+                        <label class="sr-only" for="location">Name</label>
+                    <input type="text" class="form-control mb-2 mr-sm-2" id="location"
+                        placeholder="City, state, zipcode, or “remote”">
+                    </div>
+                    <div class="col">
+                        <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </header>
+
     <div class="components-wrapper">
         <div class="container">
             <!-- card starts -->
@@ -39,7 +148,7 @@
             </div>
             <!--dropdown ends -->
             <br /><br />
-            
+
             <!-- job-detail-card starts -->
             <div class="card job-detail-card">
                 <div class="card-header">
@@ -64,25 +173,28 @@
                         <div class="tab-pane fade show active" id="job-description-tab" role="tabpanel"
                             aria-labelledby="job-description-tab">
                             <p>Sinclair Digital is a division of Sinclair Broadcast Group with dual headquarters in
-                            Seattle, WA and Hunt Valley, MD. Sinclair Digital was formed in February of 2014 with the
-                            goal of making the nation’s largest broadcaster a leader in digital media and content
-                            distribution on all platforms. In the past 5 years, Sinclair Digital has amassed a
-                            100+person team of innovative leaders, designers, developers and testers that are launching
-                            digital properties and new brands on web, mobile, and ott devices that reach more then 40
-                            million people every month. This effort is powered by a proprietary media management and
-                            publishing platform that automates processes and production of content in unique and
-                            compelling ways.</p>
+                                Seattle, WA and Hunt Valley, MD. Sinclair Digital was formed in February of 2014 with
+                                the
+                                goal of making the nation’s largest broadcaster a leader in digital media and content
+                                distribution on all platforms. In the past 5 years, Sinclair Digital has amassed a
+                                100+person team of innovative leaders, designers, developers and testers that are
+                                launching
+                                digital properties and new brands on web, mobile, and ott devices that reach more then
+                                40
+                                million people every month. This effort is powered by a proprietary media management and
+                                publishing platform that automates processes and production of content in unique and
+                                compelling ways.</p>
 
                             <h4>REQUIREMENTS</h4>
                             <p>A current portfolio that includes design work in a variety of products that have shipped
-                            2+ years as a UX designer, product designer, mobile designer, or similar
-                            Strong organizational and time management skills
-                            Expertly skilled at taking an ambiguous problem and seeking concrete answers
-                            Demonstrated understanding of information hierarchy and typography
-                            Ability to take initiative and move a project from inception to launch
-                            Mastery of Sketch or similar interface design tools
-                            Experience building and maintaining design pattern libraries
-                            Experience with low to medium fidelity prototyping tools</p>
+                                2+ years as a UX designer, product designer, mobile designer, or similar
+                                Strong organizational and time management skills
+                                Expertly skilled at taking an ambiguous problem and seeking concrete answers
+                                Demonstrated understanding of information hierarchy and typography
+                                Ability to take initiative and move a project from inception to launch
+                                Mastery of Sketch or similar interface design tools
+                                Experience building and maintaining design pattern libraries
+                                Experience with low to medium fidelity prototyping tools</p>
                         </div>
                         <div class="tab-pane fade" id="about-compay-tab" role="tabpanel"
                             aria-labelledby="about-compay-tab">...</div>
