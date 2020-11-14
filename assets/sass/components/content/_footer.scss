@@ -173,6 +173,7 @@
 		border-radius: 2px;
         font-weight: bold;
         margin-bottom: 0 !important;
+        justify-content: center;
 	}
 }
 .job-search-section{
@@ -349,7 +350,26 @@
     margin-top: -45px;
     margin-left: -15px;
     margin-right: -15px;
+    .nav-link.active {
+		background: transparent;
+        border: 0;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: 0px;
+            background: #24bf49;
+            height: 2px;
+            width: 100%;
+        }
+	}
+	.nav-item {
+		margin-bottom: -1px;
+		padding: 0;
+		margin: 0 15px;
+	}
 	.nav-link.active {
+        position:relative;
 		background: transparent;
 		border: 0;
 	}
@@ -378,26 +398,111 @@
 	}
 }
 
-.nav-link.active {
-    position: relative;
-	&:before {
-		content: '';
-		position: absolute;
-		bottom: 0px;
-		background: #24bf49;
-		height: 2px;
+// styling job profile page
+.user-profile-thumb {
+	width: 170px;
+    height: 170px;
+    overflow: hidden;
+    border-radius: 50%;
+	img {
+		height: 100%;
 		width: 100%;
+		object-fit: cover;
 	}
 }
-.nav-tabs {
-	.nav-link.active {
-		background: transparent;
-		border: 0;
+.job-profile-wrap {
+	padding: 40px 0;
+}
+.user-profile-info {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    
+	h2 {
+		font-size: 30px;
+		font-weight: bold;
+		color: #303030;
+		margin-bottom: 15px;
 	}
-	.nav-item {
-		margin-bottom: -1px;
-		padding: 0;
-		margin: 0 15px;
+	p {
+        margin-bottom: 0;
+		a {
+			font-size: 14px;
+            color: #404040;
+            display:inline-block;
+            padding-right: 30px;
+		}
+	}
+	
+}
+
+
+// user profile feature block
+
+.user-profile-feature-block {
+	h3 {
+		font-size: 18px;
+		font-weight: bold;  
+		margin-bottom: 20px;
+	}
+	p {
+		margin-bottom: 30px;
+		font-size: 13px;
+	}
+	padding-bottom: 30px;
+	ul {
+		list-style: none;
+        padding-left: 0;
+        margin-bottom: 0;
+        li{
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 30px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+	}
+	h4 {
+		font-size: 15px;
+		font-weight: bold;
+		margin-bottom: 10px;
+	}
+	.meta-data {
+		font-size: 12px;
+		margin-bottom: 30px;
 	}
 }
+
+.user-profile-feature-block.education-block {
+	li {
+		&:last-child {
+			border-bottom: 0;
+		}
+	}
+}
+
+.user-profile-feature-block.skill-block {
+	max-width: 700px;
+	h3 {
+		font-size: 18px;
+	}
+	.badge {
+		font-size: 13px;
+		font-weight: normal;
+		background: #f1f1f1;
+		color: #303030;
+		padding: 9px 25px;
+		border-radius: 30px;
+		margin-right: 15px;
+		display: inline-block;
+		margin-bottom: 20px;
+	}
+}
+
+// styling header employers
+.employers {
+    font-weight: bold;
+    color: #484848;
+    font-size: 13px;
+}
+
 
