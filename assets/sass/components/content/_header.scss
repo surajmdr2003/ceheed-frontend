@@ -2,4 +2,125 @@
     position: relative;
     z-index: 9;
     background-color: $color__white;
+
+    .navbar {
+        padding: 3px 30px;
+
+        .brand-logo {
+            border-right: 1px solid #f1f1f1;
+            padding-right: 15px;
+            line-height: 0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+		.navbar-nav > li {
+            padding: 12px 30px;
+
+            &:first-child {
+				padding-left: 15px;
+            }
+            
+			a {
+				color: #484848;
+				font-weight: normal;
+			}
+        }
+        
+        ul.secondary-menu > li {
+            padding: 10px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+
+        .dropdown-toggle::after {
+            border-top: 5px solid #c0c0c0;
+            border-right: 5px solid transparent;
+            border-left: 5px solid transparent;
+            margin-left: 30px;
+        }
+    }
+
+}
+
+
+.menu-profile.media {
+    align-items: center;
+
+	h6 {
+		margin-bottom: 0;
+	}
+}
+
+
+.job-search-section {
+	background-image: linear-gradient(to left, #6f37bf, #b82ebf 100%);
+    padding: 20px 0;
+    
+    .col {
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+	.form-control {
+		margin-bottom: 0 !important;
+		border-radius: 2px;
+    }
+    
+	.btn-primary {
+		height: 60px;
+		min-width: 200px;
+        border-radius: 2px;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 0 !important;
+	}
+}
+
+.notification-dropdown-menu {
+    border: 1px solid $color__gray100;
+    background-color: $color__white;
+    min-width: size(380);
+    padding: 0;
+    margin: 0;
+
+    .notification-header {
+        font-size: size(13);
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: size(15);
+        background-color: $color__white;
+        border-bottom: 1px solid $color__gray100;
+
+        .btn-link {
+            margin-left: size(15);
+        }
+    }
+
+    .notifications {
+        li.media {
+            padding: size(25) size(15) size(15) size(20); 
+            border-bottom: 1px solid #f1f1f1;
+
+            h5 {
+                font-size: size(12);
+                margin-top: 0;
+                margin-bottom: size(5);
+            }
+            p {
+                font-size: size(12);
+                margin-bottom: size(5);
+            }
+
+            &:last-child {
+                border-bottom: 0;
+            }
+        }
+    }
 }
