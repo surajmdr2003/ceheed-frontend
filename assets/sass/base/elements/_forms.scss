@@ -1,11 +1,22 @@
 .form-group {
-    margin-bottom: 1.55rem;
+    margin-bottom: 30px;
 
     label {
-        @include font-size(12px);
-        color: $color__text-heading;
+		@include font-size(12px);
+        color: #5f5f5f;
         display: block;
-    }
+	}
+	
+	input {
+		background: #fff !important;
+		border: solid 1px #e0e0e0;
+		border-radius: 2px;
+        height: 70px;
+        color: #404040 !important;
+	}
+	.forgotpassword-link {
+		font-size: 12px;
+	}
 
     .field-wt-icon {
         position: relative;
@@ -19,4 +30,40 @@
             cursor: pointer;
         }
     }
+}
+
+// styling login form-fields
+
+.login-form-block {
+    .greeting-title{
+        h3{
+            font-size: 30px;
+            margin-bottom: 10px !important;
+            font-weight: 800;
+        }
+        p{
+            font-size: 13px;
+        }
+    }
+	.btn-block {
+		height: 70px;
+		margin-bottom: 30px;
+		font-size: 18px;
+		font-weight: normal;
+        text-transform: uppercase;
+        font-weight: 800;
+	}
+	.seperator {
+		color: #606060;
+		font-size: 13px;
+		padding-bottom: 5px;
+	}
+	.btn-block.btn-outline-info {
+		height: 52px;
+		font-size: 13px;
+        font-weight: bold !important;
+        border-radius: 0;
+        text-transform: initial;
+        border-color: #0077b5;        
+	}
 }
