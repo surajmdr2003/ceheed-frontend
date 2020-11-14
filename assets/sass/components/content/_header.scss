@@ -6,6 +6,10 @@
     .navbar {
         padding: 3px 30px;
 
+        &.no-menu {
+            padding: 17.5px 30px;  
+        }
+
         .brand-logo {
             border-right: 1px solid #f1f1f1;
             padding-right: 15px;
@@ -123,4 +127,17 @@
             }
         }
     }
+}
+
+.employeer-link {
+    border-left: 1px solid #f1f1f1;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #374abf;
+    font-weight: bold;
+}
+
+.text-dark {
+    color: #484848;
 }
