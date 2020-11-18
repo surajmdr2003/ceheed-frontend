@@ -11,29 +11,31 @@ jQuery(document).ready(function(){
 
     $("#jobList").css('height', $("#job-detail").height());
 
-    window.onload = function(){
-        if(!navigator.userAgent.match('Macintosh')){
-            var element = document.querySelectorAll('.slimScroll');
-    
-            // Apply slim scroll plugin
-            var one = new slimScroll(element[0], {
-                'wrapperClass': 'scroll-wrapper unselectable mac',
-                'scrollBarContainerClass': 'scrollBarContainer',
-                'scrollBarContainerSpecialClass': 'animate',
-                'scrollBarClass': 'scroll',
-                'keepFocus': false
-            });
-    
-            // resize example
-            // To make the resizing work, set the height of the container in PERCENTAGE
-            window.onresize = function(){
-                one.resetValues();
+    if($(".slimScroll").length) {
+        window.onload = function(){
+            if(!navigator.userAgent.match('Macintosh')){
+                var element = document.querySelectorAll('.slimScroll');
+        
+                // Apply slim scroll plugin
+                var one = new slimScroll(element[0], {
+                    'wrapperClass': 'scroll-wrapper unselectable mac',
+                    'scrollBarContainerClass': 'scrollBarContainer',
+                    'scrollBarContainerSpecialClass': 'animate',
+                    'scrollBarClass': 'scroll',
+                    'keepFocus': false
+                });
+        
+                // resize example
+                // To make the resizing work, set the height of the container in PERCENTAGE
+                window.onresize = function(){
+                    one.resetValues();
+                }
+            }
+            else{
+                document.write("For Mac users, this custom slimscroll styles will not be applied");
             }
         }
-        else{
-            document.write("For Mac users, this custom slimscroll styles will not be applied");
-        }
-    }
+    } 
 
     $('#postedDate').daterangepicker({
         singleDatePicker: true,
