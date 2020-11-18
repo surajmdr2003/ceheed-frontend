@@ -1,5 +1,9 @@
+.default-spacing{
+    padding:40px 0;
+}
 .main-header {
     position: relative;
     z-index: 9;
-    background-color: $color__white;
+    background-color: #fff;
+    border: solid 1px #f1f1f1;
 }
