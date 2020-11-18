@@ -88,7 +88,7 @@
     list-style: none;
 
     li {
-        padding: 0 5px;
+        padding: 0 8px;
     
         a {
             color: #594138;
@@ -164,6 +164,17 @@
         text-transform: uppercase;
         margin-bottom: 10px;
     }
+
+    .fav-job {
+        font-size: 18px;
+        cursor: pointer;
+
+        &.active i:before {
+            content: '';
+            color: $secondary;
+        }
+    }
+
 	.btn {
 		height: 50px;
 		font-size: 14px;
@@ -284,19 +295,22 @@
 		margin-bottom: 30px;
 		font-size: 13px;
 	}
-	padding-bottom: 30px;
+    padding-bottom: 30px;
+    
 	ul {
 		list-style: none;
         padding-left: 0;
         margin-bottom: 0;
-        li{
+        li {
             border-bottom: 1px solid #ccc;
             margin-bottom: 30px;
-            &:last-child{
+            &:last-child {
                 margin-bottom: 0;
+                border: 0;
             }
         }
-	}
+    }
+    
 	h4 {
 		font-size: 15px;
 		font-weight: bold;
@@ -308,15 +322,8 @@
 	}
 }
 
-.user-profile-feature-block.education-block {
-	li {
-		&:last-child {
-			border-bottom: 0;
-		}
-	}
-}
 
-.user-profile-feature-block.skill-block {
+.skill-block {
 	max-width: 700px;
 	h3 {
 		font-size: 18px;

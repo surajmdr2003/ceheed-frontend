@@ -13,6 +13,8 @@
 		border-radius: 2px;
         height: 70px;
         color: #404040 !important;
+        padding-left: 30px;
+        padding-right: 30px;
 	}
 	.forgotpassword-link {
 		font-size: 12px;
@@ -64,6 +66,14 @@
         font-weight: bold !important;
         border-radius: 0;
         text-transform: initial;
-        border-color: #0077b5;        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        i {
+            font-size: 30px;
+            vertical-align: middle;
+            margin-right: 15px;
+        }
 	}
 }

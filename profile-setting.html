@@ -138,8 +138,10 @@
                 <div class="row">
                     <div class="col-3">
                         <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist">
-                            <a class="nav-link active" id="personal-summary-tab" data-toggle="pill" href="#personal-summary">Personal summary</a>
-                            <a class="nav-link" id="career-history-tab" data-toggle="pill" href="#career-history">Career history</a>
+                            <a class="nav-link active" id="personal-summary-tab" data-toggle="pill"
+                                href="#personal-summary">Personal summary</a>
+                            <a class="nav-link" id="career-history-tab" data-toggle="pill" href="#career-history">Career
+                                history</a>
                             <a class="nav-link" id="education-tab" data-toggle="pill" href="#education">Education</a>
                             <a class="nav-link" id="skills-tab" data-toggle="pill" href="#skills">Skills</a>
                         </div>
@@ -149,7 +151,11 @@
                             <div class="tab-pane fade show active" id="personal-summary">
                                 <div class="tab-content">
                                     <h4>Your personal summary will increase the chances of getting hired</h4>
-                                    <a href="#" class="btn btn-outline-secondary">Add summary</a>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit distinctio eos
+                                        quidem, illum laudantium aut omnis necessitatibus aperiam, nulla deleniti, odit
+                                        nobis soluta eaque iste fugiat asperiores sint tempora perspiciatis?</p>
+                                    <a href="javascript:void(0)" class="btn btn-outline-secondary" data-toggle="modal"
+                                        data-target="#addSummaryModal">Add summary</a>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="career-history">
@@ -159,28 +165,85 @@
                                             <li>
                                                 <h4>
                                                     Sr. UI/UX Designer
-                                                    <a href="#">Edit <i class="fas fa-angle-right"></i></a>
+                                                    <a href="javascript:void(0)" data-toggle="modal"
+                                                    data-target="#addRoleModal">Edit <i class="fas fa-angle-right"></i></a>
                                                 </h4>
-                                                <div class="meta-data">Growcept Studio | Full-time | Apr 2017 - Aug 2018 (2 yrs 4 mos)
+                                                <div class="meta-data">Growcept Studio | Full-time | Apr 2017 - Aug 2018
+                                                    (2 yrs 4 mos)
                                                 </div>
-                                                <p>Developed aesthetically pleasing mockups and prototypes that clearly illustrates how
+                                                <p>Developed aesthetically pleasing mockups and prototypes that clearly
+                                                    illustrates how
                                                     product looks and functions. Designed several Wordpress themes.</p>
                                             </li>
                                             <li>
-                                                <h4>SEO Executive</h4>
-                                                <div class="meta-data">Apple Inc | Remote | May 2012 - Sep 2014 (2 years 4 months)</div>
-                                                <p>Worked as a SEO to increase traffic of over 50 websites. Tracked visitors behaviour
+                                                <h4>
+                                                    SEO Executive
+                                                    <a href="javascript:void(0)" data-toggle="modal"
+                                                    data-target="#addRoleModal">Edit <i class="fas fa-angle-right"></i></a>
+                                                </h4>
+                                                <div class="meta-data">Apple Inc | Remote | May 2012 - Sep 2014 (2 years
+                                                    4 months)</div>
+                                                <p>Worked as a SEO to increase traffic of over 50 websites. Tracked
+                                                    visitors behaviour
                                                     though several analytics tools and optimized conversion rates.</p>
                                             </li>
                                         </ul>
+                                        <a href="javascript:void(0)" class="btn btn-outline-secondary" data-toggle="modal"
+                                        data-target="#addRoleModal">Add new</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="education">
-                                c
+                                <div class="tab-content">
+                                    <div class="user-profile-feature-block education-block">
+                                        <ul>
+                                            <li>
+                                                <h4>
+                                                    Masters in IT Management
+                                                    <a href="javascript:void(0)" data-toggle="modal"
+                                                    data-target="#educationModal">Edit <i class="fas fa-angle-right"></i></a>
+                                                </h4>
+                                                <div class="meta-data">ABC University | Masters degree | Dec 2018 - Jan
+                                                    2020
+                                                </div>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                                    eiusmod tempor
+                                                    incididunt ut labore et dolore magna aliqua. </p>
+                                            </li>
+                                            <li>
+                                                <h4>
+                                                    Bachelors in Business Administration
+                                                    <a href="javascript:void(0)" data-toggle="modal"
+                                                    data-target="#educationModal">Edit <i class="fas fa-angle-right"></i></a>
+                                                </h4>
+                                                <div class="meta-data">Queensland University | Bachelors degree | May
+                                                    2012 - Sep 2014
+                                                </div>
+                                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                                    nisi ut aliquip ex
+                                                    ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                                    voluptate velit esse
+                                                    cillum dolore eu fugiat nulla pariatur. </p>
+                                            </li>
+                                        </ul>
+                                        <a href="javascript:void(0)" data-toggle="modal"
+                                        data-target="#educationModal" class="btn btn-outline-secondary">Add new</a>
+                                    </div> <!-- user-profile-feature-block ends -->
+                                </div>
                             </div>
                             <div class="tab-pane fade" id="skills">
-                                d
+                                <div class="user-profile-feature-block skill-block">
+                                    <span class="badge">UI Design</span>
+                                    <span class="badge">User experience design</span>
+                                    <span class="badge">Frontend development</span>
+                                    <span class="badge">Product design</span>
+                                    <span class="badge">Product management</span>
+                                    <span class="badge">Project management</span>
+                                    <span class="badge">Adobe photoshop</span>
+                                    <span class="badge">HTML/CSS/JS</span>
+                                </div> <!-- user-profile-feature-block ends -->
+                                <a href="javascript:void(0)" data-toggle="modal"
+                                data-target="#addSkillModal" class="btn btn-outline-secondary">Add new</a>
                             </div>
                         </div>
                     </div>
@@ -188,6 +251,146 @@
             </div>
         </div>
     </div>
+
+    <!-- Profile Modal -->
+    <div class="modal fade" id="addSummaryModal" tabindex="-1" aria-labelledby="addSummaryModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addSummaryModalLabel">Edit summary</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="profileSummary">Personal Summary</label>
+                            <textarea class="form-control" id="profileSummary"
+                                aria-describedby="profileSummary"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-outline-secondary">Save</button>
+                        <button type="button" class="btn btn-link" data-dismiss="modal">Cancel</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Career history Modal -->
+    <div class="modal fade" id="addRoleModal" tabindex="-1" aria-labelledby="addRoleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addRoleModalLabel">Edit role</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="jobTitle">Job title</label>
+                            <input type="text" class="form-control" id="jobTitle"
+                                aria-describedby="jobTitle" placeholder="Job title"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="companyName">Company name</label>
+                            <input type="text" class="form-control" id="companyName"
+                                aria-describedby="companyName" placeholder="Company name"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="joinDate">Date</label>
+                            <input type="text" class="form-control" id="joinDate"
+                                aria-describedby="joinDate" placeholder="Join date"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="roleSummary">Description</label>
+                            <textarea class="form-control" id="roleSummary"
+                                aria-describedby="roleSummary" rows="5">Summarize your role</textarea>
+                        </div>
+                        <button type="submit" class="btn btn-outline-secondary">Save</button>
+                        <button type="button" class="btn btn-link" data-dismiss="modal">Cancel</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Education Modal -->
+    <div class="modal fade" id="educationModal" tabindex="-1" aria-labelledby="educationModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="educationModalLabel">Edit Education</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="degreeTitle">Degree faculity</label>
+                            <input type="text" class="form-control" id="degreeTitle"
+                                aria-describedby="degreeTitle" placeholder="Masters in IT Management"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="universityName">University name</label>
+                            <input type="text" class="form-control" id="universityName"
+                                aria-describedby="universityName" placeholder="University name"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="degree">Degree</label>
+                            <input type="text" class="form-control" id="degree"
+                                aria-describedby="degree" placeholder="University name"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="joinDate">Date</label>
+                            <input type="text" class="form-control" id="joinDate"
+                                aria-describedby="joinDate" placeholder="Join date"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="roleSummary">Description</label>
+                            <textarea class="form-control" id="roleSummary"
+                                aria-describedby="roleSummary" rows="5">Summarize your role</textarea>
+                        </div>
+                        <button type="submit" class="btn btn-outline-secondary">Save</button>
+                        <button type="button" class="btn btn-link" data-dismiss="modal">Cancel</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Profile Modal -->
+    <div class="modal fade" id="addSkillModal" tabindex="-1" aria-labelledby="addSkillModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addSkillModalLabel">Add skill</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="skill">Skill</label>
+                            <input class="form-control" id="skill"
+                                aria-describedby="skill"/>
+                        </div>
+                        <button type="submit" class="btn btn-outline-secondary">Save</button>
+                        <button type="button" class="btn btn-link" data-dismiss="modal">Cancel</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <footer class="default-padding grey-divider">
         <div class="container">
