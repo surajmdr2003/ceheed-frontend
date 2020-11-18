@@ -3,16 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Register</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header class="main-header">
-        <nav class="navbar navbar-expand-lg container-fluid">
-            <a class="navbar-brand mr-auto" href="./index.html">
-                <img src="./assets/images/ceheed-logo.svg" alt="logo">
-            </a>
-            <a href="#">For employeers</a>
+        <nav class="navbar navbar-expand-lg no-menu container-fluid">
+            <div class="col col-left mr-auto">
+                <a class="navbar-brand brand-logo" href="./index.html">
+                    <img src="./assets/images/ceheed-logo.svg" alt="logo">
+                </a>
+                <a href="#" class="text-dark">Go back</a>
+            </div>
+            <div class="col col-right text-right">
+                <a href="#" class="employeer-link">For employeers</a>
+            </div> 
         </nav>
     </header>
     <section class="main-container login-page-container">
@@ -30,26 +35,21 @@
                 <div class="col-md-5 col-sm-6">
                     <div class="login-form-block">
                         <div class="greeting-title">
-                            <h3>Sign in</h3>
-                            <p>Sign in to your account and start applying for jobs.</p>
+                            <h3>Register</h3>
+                            <p>Register with us for free and get acceces to millions of jobs posted.</p>
                         </div>
                         <form>
                             <div class="form-groups-wrapper">
                                 <div class="form-group">
-                                    <label for="emailAddress">Email address</label>
-                                    <input type="email" class="form-control" id="emailAddress" placeholder="you@example.com" >
+                                    <label for="fullName">Name</label>
+                                    <input type="text" class="form-control" id="fullName" placeholder="Your full name" >
                                 </div>
                                 <div class="form-group">
-                                    <label for="password">
-                                        Password
-                                        <a href="#" class="forgotpassword-link float-right">Forgot Password?</a>
-                                    </label>
-                                    <div class="field-wt-icon">
-                                        <input type="password" class="form-control" id="password" placeholder="Please enter your password">
-                                    </div>
+                                    <label for="emailAddress">Email address</label>
+                                    <input type="email" class="form-control" id="emailAddress" placeholder="info@example.com" >
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-primary btn-lg btn-block">Sign In</button>
+                            <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
                             <div class="seperator">OR</div>
                             <button type="button" class="btn btn-outline-info btn-lg btn-block">Regiser with LinkedIn</button>
                         </form>

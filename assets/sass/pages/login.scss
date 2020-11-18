@@ -1,5 +1,7 @@
 .login-page-container {
     border-top: 1px solid $color__gray100;
+    padding-top: 0;
+    padding-bottom: 0; 
 }
 
 .full-height {
@@ -8,14 +10,6 @@
  
 .login-form-block {
     margin: 1.5rem 0 1.5rem;
-
-    @include desktop-up {
-        padding-right: 2.6rem;
-    }
-
-    @include tablet-portrait-up {
-
-    }
     
     .greeting-title {
         margin-bottom: size(40);
@@ -67,13 +61,13 @@
         }
 
         @include tablet-portrait-up {
-            position: absolute;
+            position: fixed;
             width: 45%;
         }
+        
         @include tablet-landscape-up {
             width: 50%;
         }
-
 
         .slogan {
             position: relative;
