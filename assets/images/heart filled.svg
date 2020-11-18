@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="16px" viewBox="0 0 18 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>heart filled</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Liked-jobs" transform="translate(-158.000000, -499.000000)" fill="#B82EBF" fill-rule="nonzero">
+            <path d="M160.245833,508.046137 L167,515 L173.741667,508.067977 C174.879167,506.888616 176,505.17199 176,503.490308 C176,500.568114 174.408333,499 171.666667,499 C169.7,499 167.8,501.153426 167,501.987715 C166.291667,501.245154 164.333333,499 162.333333,499 C159.5875,499 158,500.568114 158,503.490308 C158,505.119574 159.1125,506.936664 160.245833,508.046137 Z" id="heart-filled"></path>
+        </g>
+    </g>
+</svg>

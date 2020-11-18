@@ -59,8 +59,12 @@
     }
 }
 
-.job-list .job-card:last-child {
-    margin-bottom: 15px;
+.job-list {
+    margin-bottom: 20px;
+
+    .job-card:last-child {
+        margin-bottom: 15px;
+    }
 }
 
 .jobs-pagiblock {
@@ -97,7 +101,26 @@
 .main-container {
     padding: 40px 0;
 }
-// blog-listing-page
+
+.slimScroll {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.scroll {
+    border-radius: 10px;
+}
+
+.scrollBarContainer {
+    width: 3px !important;
+
+    &.animate .scroll {
+        transition: 2s opacity ease;
+        -ms-transition: 2s opacity ease;
+        opacity: 0;
+    }
+}// blog-listing-page
 
 .blogpage-title {
     font-size: 30px;

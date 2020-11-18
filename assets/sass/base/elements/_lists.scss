@@ -26,3 +26,15 @@ dd {
     padding: 1.45rem 1.25rem;
     border: 1px solid $color__table-border;
 }
+
+.inline-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: inline-flex;
+	align-items: center;
+
+	li:not(:last-child){
+		margin-right: 30px;
+	}
+}
