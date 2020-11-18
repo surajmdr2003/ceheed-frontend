@@ -46,7 +46,17 @@
 		&::after {
 			margin-left: 10px;
 		}
-	}
+    }
+    
+    .job-filter-action-block {
+        span {
+            cursor: pointer; 
+
+            &:not(:last-child) {
+                margin-right: 18px;
+            }
+        }
+    }
 }
 
 .job-list .job-card:last-child {

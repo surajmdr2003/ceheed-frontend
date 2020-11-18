@@ -24,11 +24,20 @@
             &:first-child {
 				padding-left: 15px;
             }
-            
+             
 			a {
 				color: #484848;
-				font-weight: normal;
-			}
+                font-weight: normal;
+                
+                &:hover {
+                    color: $primary;
+                }
+            }
+            
+            &.active a {
+                color: $primary;
+                font-weight: bold;
+            }
         }
         
         ul.secondary-menu > li {
@@ -53,40 +62,6 @@
 
 }
 
-
-.menu-profile.media {
-    align-items: center;
-
-	h6 {
-		margin-bottom: 0;
-	}
-}
-
-
-.job-search-section {
-	background-image: linear-gradient(to left, #6f37bf, #b82ebf 100%);
-    padding: 20px 0;
-    
-    .col {
-        margin-bottom: 0 !important;
-        padding-bottom: 0 !important;
-    }
-
-	.form-control {
-		margin-bottom: 0 !important;
-		border-radius: 2px;
-    }
-    
-	.btn-primary {
-		height: 60px;
-		min-width: 200px;
-        border-radius: 2px;
-        font-size: 18px;
-        font-weight: bold;
-        margin-bottom: 0 !important;
-	}
-}
-
 .notification-dropdown-menu {
     border: 1px solid $color__gray100;
     background-color: $color__white;
@@ -103,6 +78,9 @@
         border-bottom: 1px solid $color__gray100;
 
         .btn-link {
+            font-weight: bold !important;
+            font-size: 11px;
+            text-transform: uppercase;
             margin-left: size(15);
         }
     }
@@ -122,11 +100,19 @@
                 margin-bottom: size(5);
             }
 
+            .btn-link {
+                font-weight: bold;
+                font-size: 11px;
+                text-transform: uppercase;
+                color: $secondary;
+            }
+
             &:last-child {
                 border-bottom: 0;
             }
         }
     }
+    
 }
 
 .employeer-link {
@@ -140,4 +126,68 @@
 
 .text-dark {
     color: #484848;
+}
+
+.menu-profile.media {
+    align-items: center;
+
+	h6 {
+		margin-bottom: 0;
+	}
+}
+
+.job-search-section {
+	background-image: linear-gradient(to left, #6f37bf, #b82ebf 100%);
+    padding: 20px 0;
+    
+    .col {
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+
+        &.action-col {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .close-job-search-section {
+                cursor: pointer;
+                font-size: 18px;
+                color: #fff;
+            }
+        }
+
+        .form-group {
+            position: relative;
+            margin-bottom: 0;
+
+            i {
+                font-size: 18px;
+                color: #b0b0b0;
+                position: absolute;
+                top: 50%;
+                left: 20px;
+                transform: translateY(-50%);
+            }
+
+            .form-control {
+                padding-left: 50px;
+                height: 60px;
+            }
+        }
+        
+    }
+
+	.form-control {
+		margin-bottom: 0 !important;
+		border-radius: 2px;
+    }
+    
+	.btn-primary {
+		height: 60px;
+		min-width: 200px;
+        border-radius: 2px;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 0 !important;
+	}
 }

@@ -23,7 +23,7 @@
             <div class="collapse navbar-collapse primary-navigation" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Browse jobs</a></li>
+                    <li class="active"><a href="#">Browse jobs</a></li>
                     <li><a href="#">Career advice</a></li>
                     <li><a href="#">Upload your resume</a></li>
                 </ul>
@@ -42,7 +42,7 @@
                             <ul class="notifications list-unstyled">
                                 <li class="media">
                                     <span class="icon-box mr-3">
-                                        <i class="icon-bulb"></i>
+                                        <i class="fa fa-circle"></i>
                                     </span>
                                     <div class="media-body">
                                         <h5>Adds responsive display ads</h5>
@@ -53,7 +53,7 @@
                                 </li>
                                 <li class="media">
                                     <span class="icon-box mr-3">
-                                        <i class="icon-pause"></i>
+                                        <i class="fa fa-circle"></i>
                                     </span>
                                     <div class="media-body">
                                         <h5>List-based media object</h5>
@@ -63,7 +63,7 @@
                                 </li>
                                 <li class="media">
                                     <span class="icon-box mr-3">
-                                        <i class="icon-Rectangle"></i>
+                                        <i class="fa fa-circle"></i>
                                     </span>
                                     <div class="media-body">
                                         <h5>List-based media object</h5>
@@ -98,18 +98,27 @@
             <div class="container">
                 <form class="row">
                     <div class="col">
-                        <label class="sr-only placeholder-text" for="jobtitle-keyword">Job title, keyword or
-                            company</label>
-                        <input type="text" class="form-control mb-2 mr-sm-2" id="jobtitle-keyword"
-                            placeholder="Job title, keyword or company">
+                        <div class="form-group">
+                            <i class="fa fa-search"></i>
+                            <label class="sr-only placeholder-text" for="jobtitle-keyword">Job title, keyword or
+                                company</label>
+                            <input type="text" class="form-control mb-2 mr-sm-2" id="jobtitle-keyword"
+                                placeholder="Job title, keyword or company">
+                        </div>
                     </div>
                     <div class="col">
-                        <label class="sr-only placeholder-text" for="location">Name</label>
-                        <input type="text" class="form-control mb-2 mr-sm-2" id="location"
-                            placeholder="City, state, zipcode, or “remote”">
+                        <div class="form-group">
+                            <i class="fa fa-map-marker-alt"></i>
+                            <label class="sr-only placeholder-text" for="location">Name</label>
+                            <input type="text" class="form-control mb-2 mr-sm-2" id="location"
+                                placeholder="City, state, zipcode, or “remote”">
+                        </div>
                     </div>
-                    <div class="col">
+                    <div class="col action-col">
                         <button type="submit" class="btn btn-primary mb-2">Search jobs</button>
+                        <span id="closeJobSearchSection" class="close-job-search-section">
+                            <i class="fa fa-times"></i>
+                        </span>
                     </div>
                 </form>
             </div>
@@ -123,8 +132,8 @@
                 </h1>
                 <span>520 jobs found</span>
             </div>
-            <div class="jobs-filter-block">
-                <ul>
+            <div class="jobs-filter-block row no-gutters align-items-center">
+                <ul class="col mr-auto">
                     <li class="dropdown">
                         <button class="btn btn-dropdown dropdown-toggle" type="button">
                             Date posted
@@ -187,6 +196,11 @@
                         </div>
                     </li>
                 </ul>
+
+                <div class="job-filter-action-block">
+                    <span class="text-primary">Saved <i class="fa fa-check"></i></span>
+                    <span class="text-secondary">Save this search</span>
+                </div>
             </div>
 
             <div class="jobs-content row">
@@ -341,13 +355,19 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-4">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/DgWUX8dPK7U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/DgWUX8dPK7U" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     </div>
                     <div class="col-sm-4">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/DgWUX8dPK7U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/DgWUX8dPK7U" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     </div>
                     <div class="col-sm-4">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/DgWUX8dPK7U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/DgWUX8dPK7U" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     </div>
                 </div>
             </div>

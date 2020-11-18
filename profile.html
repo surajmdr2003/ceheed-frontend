@@ -98,18 +98,27 @@
             <div class="container">
                 <form class="row">
                     <div class="col">
-                        <label class="sr-only placeholder-text" for="jobtitle-keyword">Job title, keyword or
-                            company</label>
-                        <input type="text" class="form-control mb-2 mr-sm-2" id="jobtitle-keyword"
-                            placeholder="Job title, keyword or company">
+                        <div class="form-group">
+                            <i class="fa fa-search"></i>
+                            <label class="sr-only placeholder-text" for="jobtitle-keyword">Job title, keyword or
+                                company</label>
+                            <input type="text" class="form-control mb-2 mr-sm-2" id="jobtitle-keyword"
+                                placeholder="Job title, keyword or company">
+                        </div>
                     </div>
                     <div class="col">
-                        <label class="sr-only placeholder-text" for="location">Name</label>
-                        <input type="text" class="form-control mb-2 mr-sm-2" id="location"
-                            placeholder="City, state, zipcode, or “remote”">
+                        <div class="form-group">
+                            <i class="fa fa-map-marker-alt"></i>
+                            <label class="sr-only placeholder-text" for="location">Name</label>
+                            <input type="text" class="form-control mb-2 mr-sm-2" id="location"
+                                placeholder="City, state, zipcode, or “remote”">
+                        </div>
                     </div>
-                    <div class="col">
+                    <div class="col action-col">
                         <button type="submit" class="btn btn-primary mb-2">Search jobs</button>
+                        <span id="closeJobSearchSection" class="close-job-search-section">
+                            <i class="fa fa-times"></i>
+                        </span>
                     </div>
                 </form>
             </div>
