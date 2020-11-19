@@ -1,0 +1,79 @@
+.page-title {
+	h2 {
+		font-size: 20px;
+		font-weight: bold;
+		margin-bottom: 15px;
+	}
+	margin-bottom: 40px;
+	p {
+		font-size: 13px;
+		color: #404040;
+	}
+}
+
+.profile-tab-wrapper {
+	.nav-link {
+		color: #606060;
+		padding: 20px 0;
+		border-radius: 0;
+		&:focus {
+			outline: none;
+		}
+		&:hover {
+            outline: none;
+            color: #b82ebf;
+		}
+	}
+	.nav-link.active {
+		color: #b82ebf;
+		background: none;
+		font-weight: bold;
+		border-right: 2px solid #b82ebf;
+	}
+	.tab-content {
+		h4 {
+			font-size: 15px;
+			font-weight: bold;
+		}
+		.btn-outline-secondary {
+			font-size: 14px;
+			font-weight: bold;
+			height: 40px;
+			padding: 5px 22px;
+			min-width: 140px;
+		}
+	}
+	.tab-pane {
+		.tab-content {
+			padding-left: 50px;
+		}
+	}
+}
+.career-history-block {
+	ul {
+		li {
+			border-bottom: 1px solid #e0e0e0;
+			a {
+				float: right;
+				color: #303030;
+				font-size: 13px;
+			}
+		}
+	}
+}
+.education-block {
+	ul {
+		li {
+			a {
+				float: right;
+				color: #303030;
+				font-size: 13px;
+			}
+		}
+	}
+}
+#personal-summary {
+    h4{
+        margin-bottom: 15px;
+    }
+}
