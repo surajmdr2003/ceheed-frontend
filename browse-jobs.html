@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ceheed - Browse jobs</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand brand-logo" href="#">
+                <img src="./assets/images/ceheed-logo.svg" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse primary-navigation" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Browse jobs</a></li>
+                    <li><a href="#">Career advice</a></li>
+                    <li><a href="#">Upload your resume</a></li>
+                </ul>
+                <ul class="navbar-nav align-items-center secondary-menu">
+                    <li class="search-menu"><span id="search-job"><i class="icon-search"></i></span></li>
+                    <li class="notification-menu dropdown">
+                        <a href="#" data-toggle="dropdown">
+                            <i class="icon-bell"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right notification-dropdown-menu">
+                            <div class="notification-header">
+                                Notifications <a href="./all-notifications.html" class="text-primary btn-link">See
+                                    All</a>
+                            </div>
+                            <ul class="notifications list-unstyled">
+                                <li class="media">
+                                    <span class="icon-box mr-3">
+                                        <i class="icon-angle-right"></i>
+                                    </span>
+                                    <div class="media-body">
+                                        <h5>Adds responsive display ads</h5>
+                                        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                                            sollicitudin.</p>
+                                        <a href="#" class="btn-link">Notify Sales</a>
+                                    </div>
+                                </li>
+                                <li class="media">
+                                    <span class="icon-box mr-3">
+                                        <i class="icon-angle-right"></i>
+                                    </span>
+                                    <div class="media-body">
+                                        <h5>List-based media object</h5>
+                                        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                                            sollicitudin.</p>
+                                    </div>
+                                </li>
+                                <li class="media">
+                                    <span class="icon-box mr-3">
+                                        <i class="icon-angle-right"></i>
+                                    </span>
+                                    <div class="media-body">
+                                        <h5>List-based media object</h5>
+                                        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                                            sollicitudin. Cras purus odio,</p>
+                                        <a href="#" class="btn-link">See Report</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="profile-menu dropdown">
+                        <div class="menu-profile media dropdown-toggle" data-toggle="dropdown">
+                            <img src="./assets/images/avatar.svg" class="profile-icon align-self-center mr-3"
+                                alt="avatar">
+                            <div class="media-body  align-self-center">
+                                <h6 class="mt-0">My Account</h6>
+                            </div>
+                        </div>
+                        <ul class="dropdown-menu dropdown-menu-right profile-dropdown-menu">
+                            <a class="dropdown-item" href="#">Dashboard</a>
+                            <a class="dropdown-item" href="#">Saved searches</a>
+                            <a class="dropdown-item" href="#">Liked jobs</a>
+                            <a class="dropdown-item" href="#">Applied jobs</a>
+                            <a class="dropdown-item" href="#">Recommended jobs</a>
+                            <a class="dropdown-item" href="#">Settings</a>
+                            <a class="dropdown-item" href="#">Sign out</a>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section id="job-search-section" class="job-search-section large-block">
+            <div class="container">
+                <h2>Find your next job here</h2>
+                <form class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <i class="icon-search"></i>
+                            <label class="sr-only placeholder-text" for="jobtitle-keyword">Job title, keyword or
+                                company</label>
+                            <input type="text" class="form-control mb-2 mr-sm-2" id="jobtitle-keyword"
+                                placeholder="Job title, keyword or company">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <i class="icon-pin"></i>
+                            <label class="sr-only placeholder-text" for="location">Name</label>
+                            <input type="text" class="form-control mb-2 mr-sm-2" id="location"
+                                placeholder="City, state, zipcode, or “remote”">
+                        </div>
+                    </div>
+                    <div class="col action-col">
+                        <button type="submit" class="btn btn-primary mb-2">Search jobs</button>
+                        <span id="close-job-search-section" class="close-job-search-section">
+                            <i class="icon-cross"></i>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </header>
+    <div class="main-container">
+        <div class="container">
+            <section class="jobs-by-type">
+                <div class="card-group">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Graduate jobs</h5>
+                            <p class="card-text">1200 jobs available</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Remote jobs</h5>
+                            <p class="card-text">1200 jobs available</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Other jobs</h5>
+                            <p class="card-text">1200 jobs available</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="jobs-by-location-cat">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="card card-cat">
+                            <div class="card-body">
+                                <h5 class="card-title">Jobs by location</h5>
+                                <ul>
+                                    <li><a href="#">Location 1</a></li>
+                                    <li><a href="#">Location 2</a></li>
+                                    <li><a href="#">Location 3</a></li>
+                                    <li><a href="#">Location 4</a></li>
+                                    <li><a href="#">Location 5</a></li>
+                                    <li><a href="#">Location 6</a></li>
+                                    <li><a href="#">Location 7</a></li>
+                                    <li><a href="#">Location 8</a></li>
+                                    <li><a href="#">Location 9</a></li>
+                                    <li><a href="#">Location 10</a></li>
+                                    <li><a href="#">Location 11</a></li>
+                                    <li><a href="#">Location 12</a></li>
+                                    <li><a href="#">Location 13</a></li>
+                                    <li><a href="#">Location 14</a></li>
+                                    <li><a href="#">Location 15</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card card-cat">
+                            <div class="card-body">
+                                <h5 class="card-title">Jobs by category</h5>
+                                <ul>
+                                    <li><a href="#">category 1</a></li>
+                                    <li><a href="#">category 2</a></li>
+                                    <li><a href="#">category 3</a></li>
+                                    <li><a href="#">category 4</a></li>
+                                    <li><a href="#">category 5</a></li>
+                                    <li><a href="#">category 6</a></li>
+                                    <li><a href="#">category 7</a></li>
+                                    <li><a href="#">category 8</a></li>
+                                    <li><a href="#">category 9</a></li>
+                                    <li><a href="#">category 10</a></li>
+                                    <li><a href="#">category 11</a></li>
+                                    <li><a href="#">category 12</a></li>
+                                    <li><a href="#">category 13</a></li>
+                                    <li><a href="#">category 14</a></li>
+                                    <li><a href="#">category 15</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </section>
+
+            <section class="jobs-by-education">
+                <div id="jobsByEducation" class="jobs-education-carousel">
+                    <!-- card starts -->
+                    <div class="card job-card ">
+                        <div class="card-body">
+                            <div class="card-tags">Apple Inc | Remote | Full time</div>
+                            <h5 class="card-title">HealthEdge Configuration designer</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">$3,000 - $5,000 a month</h6>
+                            <p class="card-text">We provide pre-set appointments with nice people just like you,
+                                close
+                                to your
+                                home.</p>
+                            <a href="#" class="card-link"><i class="icon-heart-line"></i></a>
+                        </div>
+                    </div>
+                    <!-- card ends -->
+                    <!-- card starts -->
+                    <div class="card job-card ">
+                        <div class="card-body">
+                            <div class="card-tags">Apple Inc | Remote | Full time</div>
+                            <h5 class="card-title">HealthEdge Configuration designer</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">$3,000 - $5,000 a month</h6>
+                            <p class="card-text">We provide pre-set appointments with nice people just like you,
+                                close
+                                to your
+                                home.</p>
+                            <a href="#" class="card-link"><i class="icon-heart-line"></i></a>
+                        </div>
+                    </div>
+                    <!-- card ends -->
+                    <!-- card starts -->
+                    <div class="card job-card ">
+                        <div class="card-body">
+                            <div class="card-tags">Apple Inc | Remote | Full time</div>
+                            <h5 class="card-title">HealthEdge Configuration designer</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">$3,000 - $5,000 a month</h6>
+                            <p class="card-text">We provide pre-set appointments with nice people just like you,
+                                close
+                                to your
+                                home.</p>
+                            <a href="#" class="card-link"><i class="icon-heart-line"></i></a>
+                        </div>
+                    </div>
+                    <!-- card ends -->
+                    <!-- card starts -->
+                    <div class="card job-card ">
+                        <div class="card-body">
+                            <div class="card-tags">Apple Inc | Remote | Full time</div>
+                            <h5 class="card-title">HealthEdge Configuration designer</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">$3,000 - $5,000 a month</h6>
+                            <p class="card-text">We provide pre-set appointments with nice people just like you,
+                                close
+                                to your
+                                home.</p>
+                            <a href="#" class="card-link"><i class="icon-heart-line"></i></a>
+                        </div>
+                    </div>
+                    <!-- card ends -->
+                    <!-- card starts -->
+                    <div class="card job-card ">
+                        <div class="card-body">
+                            <div class="card-tags">Apple Inc | Remote | Full time</div>
+                            <h5 class="card-title">HealthEdge Configuration designer</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">$3,000 - $5,000 a month</h6>
+                            <p class="card-text">We provide pre-set appointments with nice people just like you,
+                                close
+                                to your
+                                home.</p>
+                            <a href="#" class="card-link"><i class="icon-heart-line"></i></a>
+                        </div>
+                    </div>
+                    <!-- card ends -->
+                    <!-- card starts -->
+                    <div class="card job-card ">
+                        <div class="card-body">
+                            <div class="card-tags">Apple Inc | Remote | Full time</div>
+                            <h5 class="card-title">HealthEdge Configuration designer</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">$3,000 - $5,000 a month</h6>
+                            <p class="card-text">We provide pre-set appointments with nice people just like you,
+                                close
+                                to your
+                                home.</p>
+                            <a href="#" class="card-link"><i class="icon-heart-line"></i></a>
+                        </div>
+                    </div>
+                    <!-- card ends -->
+                  </div>
+            </section>
+
+            <section class="jobs-by-alphabet">
+                <div class="card card-cat">
+                    <div class="card-body">
+                        <h5 class="card-title">Jobs by title</h5>
+                        <ul>
+                            <li><a href="#">A</a></li>
+                            <li><a href="#">B</a></li>
+                            <li><a href="#">C</a></li>
+                            <li><a href="#">D</a></li>
+                            <li><a href="#">E</a></li>
+                            <li><a href="#">F</a></li>
+                            <li><a href="#">G</a></li>
+                            <li><a href="#">H</a></li>
+                            <li><a href="#">I</a></li>
+                            <li><a href="#">J</a></li>
+                            <li><a href="#">K</a></li>
+                            <li><a href="#">L</a></li>
+                            <li><a href="#">M</a></li>
+                            <li><a href="#">N</a></li>
+                            <li><a href="#">O</a></li>
+                            <li><a href="#">P</a></li>
+                            <li><a href="#">Q</a></li>
+                            <li><a href="#">R</a></li>
+                            <li><a href="#">S</a></li>
+                            <li><a href="#">T</a></li>
+                            <li><a href="#">U</a></li>
+                            <li><a href="#">V</a></li>
+                            <li><a href="#">W</a></li>
+                            <li><a href="#">X</a></li>
+                            <li><a href="#">Y</a></li>
+                            <li><a href="#">Z</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="registernow-wrapper">
+        <div class="container">
+            <div class="registernow-wrap default-padding">
+                <div class="registernow-content">
+                    <div class="register-now-title">
+                        <span> WE MATCH </span> EMPLOYERS
+                        <span> WITH </span> RIGHT CANDIDATES
+                    </div>
+                    <div class="text">
+                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </span>
+                    </div>
+                    <a href="#" title="" class="btn register-now-btn">
+                        register now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="default-padding grey-divider">
+        <div class="container">
+            <div class="site-footer-wrapper">
+                <div class="row footer-menu-listing">
+                    <div class="footer-menu-item col-md-2">
+                        <h3 class="footer-title">
+                            About
+                        </h3>
+                        <ul class="footer-items">
+                            <li>
+                                <a href="#" title="">About <span class="text-style green-text">Ceheed</span></a>
+                            </li>
+                            <li><a href="#" title="">Careers</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-menu-item col-md-2">
+                        <h3 class="footer-title">
+                            Candidates
+                        </h3>
+                        <ul class="footer-items">
+                            <li>
+                                <a href="#" title=""> <span class="text-style  pink-text">Upload your resume</span></a>
+                            </li>
+                            <li><a href="#" title="">Browse jobs</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-menu-item col-md-2">
+                        <h3 class="footer-title">
+                            Employers
+                        </h3>
+                        <ul class="footer-items">
+                            <li>
+                                <a href="#" title=""> <span class="text-style  blue-text">Upload your resume</span></a>
+                            </li>
+                            <li><a href="#" title="">Browse jobs</a></li>
+                            <li><a href="#" title="">Hiring with Ceheed </a></li>
+                            <li><a href="#" title="">FAQ </a></li>
+                            <li><a href="#" title="">Employers support</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-menu-item col-md-2">
+                        <h3 class="footer-title">
+                            Resources
+                        </h3>
+                        <ul class="footer-items">
+                            <li><a href="#" title="">Blogs</a></li>
+                            <li><a href="#" title="">Video examples</a></li>
+                            <li><a href="#" title="">Resume tips</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-menu-item col-md-2">
+                        <h3 class="footer-title">
+                            Legal
+                        </h3>
+                        <ul class="footer-items">
+                            <li><a href="#" title="">Privacy policy</a></li>
+                            <li><a href="#" title="">Terms & conditions</a></li>
+                            <li><a href="#" title="">Disclaimers</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-menu-item col-md-2">
+                        <h3 class="footer-title">
+                            Get in touch
+                        </h3>
+                        <ul class="footer-items">
+                            <li><a href="#" title="">Contact Ceheed office </a></li>
+                            <li><a href="#" title="">Contact support</a></li>
+                        </ul>
+                    </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright-section">
+                <div class="container">
+                    <div class="copyright-content row">
+                        <div class="item copyright-text col-md-4">
+                            Copyright at Ceheed | All rights reserved
+                        </div>
+                        <div class="item col-md-6">
+                            <ul class="footer-site-menu">
+                                <li><a href="#" title="">Home</a></li>
+                                <li><a href="#" title="">Browse jobs</a></li>
+                                <li><a href="#" title="">Career advise</a></li>
+                                <li><a href="#" title="">Register</a></li>
+                                <li><a href="#" title="">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="item col-md-2">
+                            <ul class="social-share">
+                                <li><a href="#" title=""><i class="fab fa-facebook-square"></i></a></li>
+                                <li><a href="#" title=""><i class="fab fa-instagram-square"></i></a></li>
+                                <li><a href="#" title=""><i class="fab fa-twitter-square"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </footer>
+</body>
+<script type="text/javascript" src="assets/js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="assets/js/popper.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/vendors/slim-scroll-1.3.3/slimscroll.min.js"></script>
+<script type="text/javascript" src="assets/vendors/daterangepicker/moment.min.js"></script>
+<script type="text/javascript" src="assets/vendors/daterangepicker/daterangepicker.js"></script>
+<script type="text/javascript" src="assets/vendors/slick/slick.min.js"></script>
+<script type="text/javascript" src="assets/js/custom.js"></script>
+
+</html>

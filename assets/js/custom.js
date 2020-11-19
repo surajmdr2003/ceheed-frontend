@@ -50,6 +50,11 @@ jQuery(document).ready(function(){
         $(this).toggleClass('active');
     })
 
+    $('#jobsByEducation').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+    });
     
     
 })
