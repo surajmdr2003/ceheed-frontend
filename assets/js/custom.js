@@ -50,18 +50,15 @@ jQuery(document).ready(function(){
         $(this).toggleClass('active');
     })
 
-<<<<<<< HEAD
     $("#imgInp").change(function(){
         readURL(this);
     });
 
-=======
     $('#jobsByEducation').slick({
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 3
     });
->>>>>>> 06307b304aec59e6b9bf4a76a5a4727274d4d8cb
     
     
 })
