@@ -15,7 +15,7 @@ jQuery(document).ready(function(){
         window.onload = function(){
             if(!navigator.userAgent.match('Macintosh')){
                 var element = document.querySelectorAll('.slimScroll');
-        
+
                 // Apply slim scroll plugin
                 var one = new slimScroll(element[0], {
                     'wrapperClass': 'scroll-wrapper unselectable mac',
@@ -24,7 +24,7 @@ jQuery(document).ready(function(){
                     'scrollBarClass': 'scroll',
                     'keepFocus': false
                 });
-        
+
                 // resize example
                 // To make the resizing work, set the height of the container in PERCENTAGE
                 window.onresize = function(){
@@ -32,10 +32,10 @@ jQuery(document).ready(function(){
                 }
             }
             else{
-                document.write("For Mac users, this custom slimscroll styles will not be applied");
+                $('.slimScroll').addClass('mac-os');
             }
         }
-    } 
+    }
 
     $('#postedDate').daterangepicker({
         singleDatePicker: true,
@@ -50,6 +50,11 @@ jQuery(document).ready(function(){
         $(this).toggleClass('active');
     })
 
+    $('#jobsByEducation').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+    });
     
     
 })

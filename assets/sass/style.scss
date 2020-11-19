@@ -8,6 +8,8 @@
 /* bootstrap
 --------------------------------------------- */
 @import "./../vendors/bootstrap-4.5.2/scss/bootstrap"; 
+@import "./../vendors/slick/slick.scss"; 
+@import "./../vendors/slick/slick-theme.scss"; 
 
 /*--------------------------------------------------------------
 # Generic
@@ -55,4 +57,7 @@
 @import "pages/login"; 
 @import "pages/blog-list.scss"; 
 @import "pages/blogdetail.scss"; 
+@import "pages/profile-setting.scss"; 
+@import "pages/saved-searches.scss"; 
+@import "pages/liked-jobs.scss"; 
 

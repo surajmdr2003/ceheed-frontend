@@ -4,18 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ceheed component</title>
+    <title>ceheed - profile setting</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
-        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
-        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -37,15 +27,20 @@
                     <li><a href="#">Upload your resume</a></li>
                 </ul>
                 <ul class="navbar-nav align-items-center secondary-menu">
-                    <li><i class="icon icon-notification"></i>
-                        <div class="dropdown-menu notification-dropdown-menu">
+                    <li class="search-menu"><span id="search-job"><i class="icon-search"></i></span></li>
+                    <li class="notification-menu dropdown">
+                        <a href="#" data-toggle="dropdown">
+                            <i class="icon-bell"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right notification-dropdown-menu">
                             <div class="notification-header">
-                                Notifications <a href="./all-notifications.html" class="btn-link">See All</a>
+                                Notifications <a href="./all-notifications.html" class="text-primary btn-link">See
+                                    All</a>
                             </div>
-                            <ul class="notifications list-unstyled">hhh
+                            <ul class="notifications list-unstyled">
                                 <li class="media">
                                     <span class="icon-box mr-3">
-                                        <i class="icon-bulb"></i>
+                                        <i class="icon-angle-right"></i>
                                     </span>
                                     <div class="media-body">
                                         <h5>Adds responsive display ads</h5>
@@ -56,7 +51,7 @@
                                 </li>
                                 <li class="media">
                                     <span class="icon-box mr-3">
-                                        <i class="icon-pause"></i>
+                                        <i class="icon-angle-right"></i>
                                     </span>
                                     <div class="media-body">
                                         <h5>List-based media object</h5>
@@ -66,7 +61,7 @@
                                 </li>
                                 <li class="media">
                                     <span class="icon-box mr-3">
-                                        <i class="icon-Rectangle"></i>
+                                        <i class="icon-angle-right"></i>
                                     </span>
                                     <div class="media-body">
                                         <h5>List-based media object</h5>
@@ -78,51 +73,52 @@
                             </ul>
                         </div>
                     </li>
-                    <li>
-                        <div class="menu-profile media">
+                    <li class="profile-menu dropdown">
+                        <div class="menu-profile media dropdown-toggle" data-toggle="dropdown">
                             <img src="./assets/images/avatar.svg" class="profile-icon align-self-center mr-3"
                                 alt="avatar">
                             <div class="media-body  align-self-center">
-                                <h6 class="mt-0">Midfirst Bank</h6>
+                                <h6 class="mt-0">My Account</h6>
                             </div>
                         </div>
-                        <ul class="dropdown-menu profile-dropdown-menu">
-                            <li>
-                                <a href="./login.html">Login</a>
-                            </li>
-                            <li>
-                                <a href="./your-profile.html">Profile</a>
-                            </li>
-                            <li>
-                                <a href="#">Payment setting</a>
-                            </li>
-                            <li>
-                                <a href="#">Billing history</a>
-                            </li>
-                            <li>
-                                <a href="#">Contact us</a>
-                            </li>
+                        <ul class="dropdown-menu dropdown-menu-right profile-dropdown-menu">
+                            <a class="dropdown-item" href="#">Dashboard</a>
+                            <a class="dropdown-item" href="#">Saved searches</a>
+                            <a class="dropdown-item" href="#">Liked jobs</a>
+                            <a class="dropdown-item" href="#">Applied jobs</a>
+                            <a class="dropdown-item" href="#">Recommended jobs</a>
+                            <a class="dropdown-item" href="#">Settings</a>
+                            <a class="dropdown-item" href="#">Sign out</a>
                         </ul>
                     </li>
                 </ul>
             </div>
         </nav>
-        <section class="job-search-section">
+        <section id="job-search-section" class="job-search-section hide">
             <div class="container">
                 <form class="row">
                     <div class="col">
-                        <label class="sr-only placeholder-text" for="jobtitle-keyword">Job title, keyword or
-                            company</label>
-                        <input type="text" class="form-control mb-2 mr-sm-2" id="jobtitle-keyword"
-                            placeholder="Job title, keyword or company">
+                        <div class="form-group">
+                            <i class="icon-search"></i>
+                            <label class="sr-only placeholder-text" for="jobtitle-keyword">Job title, keyword or
+                                company</label>
+                            <input type="text" class="form-control mb-2 mr-sm-2" id="jobtitle-keyword"
+                                placeholder="Job title, keyword or company">
+                        </div>
                     </div>
                     <div class="col">
-                        <label class="sr-only placeholder-text" for="location">Name</label>
-                        <input type="text" class="form-control mb-2 mr-sm-2" id="location"
-                            placeholder="City, state, zipcode, or “remote”">
+                        <div class="form-group">
+                            <i class="icon-pin"></i>
+                            <label class="sr-only placeholder-text" for="location">Name</label>
+                            <input type="text" class="form-control mb-2 mr-sm-2" id="location"
+                                placeholder="City, state, zipcode, or “remote”">
+                        </div>
                     </div>
-                    <div class="col">
+                    <div class="col action-col">
                         <button type="submit" class="btn btn-primary mb-2">Search jobs</button>
+                        <span id="close-job-search-section" class="close-job-search-section">
+                            <i class="icon-cross"></i>
+                        </span>
                     </div>
                 </form>
             </div>
@@ -131,12 +127,12 @@
     <div class="main-container">
         <div class="container">
             <div class="page-title">
-                <h2>Profile setting</h2>
+                <h2>Profile settings</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
             </div>
             <div class="page-content">
-                <div class="row">
-                    <div class="col-3">
+                <div class="row profile-tab-wrapper">
+                    <div class="col-2">
                         <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist">
                             <a class="nav-link active" id="personal-summary-tab" data-toggle="pill"
                                 href="#personal-summary">Personal summary</a>
@@ -146,14 +142,11 @@
                             <a class="nav-link" id="skills-tab" data-toggle="pill" href="#skills">Skills</a>
                         </div>
                     </div>
-                    <div class="col-9">
+                    <div class="col-10">
                         <div class="tab-content" id="v-pills-tabContent">
                             <div class="tab-pane fade show active" id="personal-summary">
                                 <div class="tab-content">
                                     <h4>Your personal summary will increase the chances of getting hired</h4>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit distinctio eos
-                                        quidem, illum laudantium aut omnis necessitatibus aperiam, nulla deleniti, odit
-                                        nobis soluta eaque iste fugiat asperiores sint tempora perspiciatis?</p>
                                     <a href="javascript:void(0)" class="btn btn-outline-secondary" data-toggle="modal"
                                         data-target="#addSummaryModal">Add summary</a>
                                 </div>
@@ -166,7 +159,8 @@
                                                 <h4>
                                                     Sr. UI/UX Designer
                                                     <a href="javascript:void(0)" data-toggle="modal"
-                                                    data-target="#addRoleModal">Edit <i class="fas fa-angle-right"></i></a>
+                                                        data-target="#addRoleModal">Edit <i
+                                                            class="fas fa-angle-right"></i></a>
                                                 </h4>
                                                 <div class="meta-data">Growcept Studio | Full-time | Apr 2017 - Aug 2018
                                                     (2 yrs 4 mos)
@@ -179,7 +173,8 @@
                                                 <h4>
                                                     SEO Executive
                                                     <a href="javascript:void(0)" data-toggle="modal"
-                                                    data-target="#addRoleModal">Edit <i class="fas fa-angle-right"></i></a>
+                                                        data-target="#addRoleModal">Edit <i
+                                                            class="fas fa-angle-right"></i></a>
                                                 </h4>
                                                 <div class="meta-data">Apple Inc | Remote | May 2012 - Sep 2014 (2 years
                                                     4 months)</div>
@@ -188,8 +183,8 @@
                                                     though several analytics tools and optimized conversion rates.</p>
                                             </li>
                                         </ul>
-                                        <a href="javascript:void(0)" class="btn btn-outline-secondary" data-toggle="modal"
-                                        data-target="#addRoleModal">Add new</a>
+                                        <a href="javascript:void(0)" class="btn btn-outline-secondary"
+                                            data-toggle="modal" data-target="#addRoleModal">Add new</a>
                                     </div>
                                 </div>
                             </div>
@@ -201,7 +196,8 @@
                                                 <h4>
                                                     Masters in IT Management
                                                     <a href="javascript:void(0)" data-toggle="modal"
-                                                    data-target="#educationModal">Edit <i class="fas fa-angle-right"></i></a>
+                                                        data-target="#educationModal">Edit <i
+                                                            class="fas fa-angle-right"></i></a>
                                                 </h4>
                                                 <div class="meta-data">ABC University | Masters degree | Dec 2018 - Jan
                                                     2020
@@ -214,7 +210,8 @@
                                                 <h4>
                                                     Bachelors in Business Administration
                                                     <a href="javascript:void(0)" data-toggle="modal"
-                                                    data-target="#educationModal">Edit <i class="fas fa-angle-right"></i></a>
+                                                        data-target="#educationModal">Edit <i
+                                                            class="fas fa-angle-right"></i></a>
                                                 </h4>
                                                 <div class="meta-data">Queensland University | Bachelors degree | May
                                                     2012 - Sep 2014
@@ -226,24 +223,26 @@
                                                     cillum dolore eu fugiat nulla pariatur. </p>
                                             </li>
                                         </ul>
-                                        <a href="javascript:void(0)" data-toggle="modal"
-                                        data-target="#educationModal" class="btn btn-outline-secondary">Add new</a>
+                                        <a href="javascript:void(0)" data-toggle="modal" data-target="#educationModal"
+                                            class="btn btn-outline-secondary">Add new</a>
                                     </div> <!-- user-profile-feature-block ends -->
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="skills">
-                                <div class="user-profile-feature-block skill-block">
-                                    <span class="badge">UI Design</span>
-                                    <span class="badge">User experience design</span>
-                                    <span class="badge">Frontend development</span>
-                                    <span class="badge">Product design</span>
-                                    <span class="badge">Product management</span>
-                                    <span class="badge">Project management</span>
-                                    <span class="badge">Adobe photoshop</span>
-                                    <span class="badge">HTML/CSS/JS</span>
-                                </div> <!-- user-profile-feature-block ends -->
-                                <a href="javascript:void(0)" data-toggle="modal"
-                                data-target="#addSkillModal" class="btn btn-outline-secondary">Add new</a>
+                                <div class="tab-content">
+                                    <div class="user-profile-feature-block skill-block">
+                                        <span class="badge">UI Design</span>
+                                        <span class="badge">User experience design</span>
+                                        <span class="badge">Frontend development</span>
+                                        <span class="badge">Product design</span>
+                                        <span class="badge">Product management</span>
+                                        <span class="badge">Project management</span>
+                                        <span class="badge">Adobe photoshop</span>
+                                        <span class="badge">HTML/CSS/JS</span>
+                                    </div> <!-- user-profile-feature-block ends -->
+                                    <a href="javascript:void(0)" data-toggle="modal" data-target="#addSkillModal"
+                                        class="btn btn-outline-secondary">Add new</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -279,8 +278,7 @@
     </div>
 
     <!-- Career history Modal -->
-    <div class="modal fade" id="addRoleModal" tabindex="-1" aria-labelledby="addRoleModalLabel"
-        aria-hidden="true">
+    <div class="modal fade" id="addRoleModal" tabindex="-1" aria-labelledby="addRoleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -293,23 +291,23 @@
                     <form>
                         <div class="form-group">
                             <label for="jobTitle">Job title</label>
-                            <input type="text" class="form-control" id="jobTitle"
-                                aria-describedby="jobTitle" placeholder="Job title"/>
+                            <input type="text" class="form-control" id="jobTitle" aria-describedby="jobTitle"
+                                placeholder="Job title" />
                         </div>
                         <div class="form-group">
                             <label for="companyName">Company name</label>
-                            <input type="text" class="form-control" id="companyName"
-                                aria-describedby="companyName" placeholder="Company name"/>
+                            <input type="text" class="form-control" id="companyName" aria-describedby="companyName"
+                                placeholder="Company name" />
                         </div>
                         <div class="form-group">
                             <label for="joinDate">Date</label>
-                            <input type="text" class="form-control" id="joinDate"
-                                aria-describedby="joinDate" placeholder="Join date"/>
+                            <input type="text" class="form-control" id="joinDate" aria-describedby="joinDate"
+                                placeholder="Join date" />
                         </div>
                         <div class="form-group">
                             <label for="roleSummary">Description</label>
-                            <textarea class="form-control" id="roleSummary"
-                                aria-describedby="roleSummary" rows="5">Summarize your role</textarea>
+                            <textarea class="form-control" id="roleSummary" aria-describedby="roleSummary"
+                                rows="5">Summarize your role</textarea>
                         </div>
                         <button type="submit" class="btn btn-outline-secondary">Save</button>
                         <button type="button" class="btn btn-link" data-dismiss="modal">Cancel</button>
@@ -320,8 +318,7 @@
     </div>
 
     <!-- Education Modal -->
-    <div class="modal fade" id="educationModal" tabindex="-1" aria-labelledby="educationModalLabel"
-        aria-hidden="true">
+    <div class="modal fade" id="educationModal" tabindex="-1" aria-labelledby="educationModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -334,28 +331,28 @@
                     <form>
                         <div class="form-group">
                             <label for="degreeTitle">Degree faculity</label>
-                            <input type="text" class="form-control" id="degreeTitle"
-                                aria-describedby="degreeTitle" placeholder="Masters in IT Management"/>
+                            <input type="text" class="form-control" id="degreeTitle" aria-describedby="degreeTitle"
+                                placeholder="Masters in IT Management" />
                         </div>
                         <div class="form-group">
                             <label for="universityName">University name</label>
                             <input type="text" class="form-control" id="universityName"
-                                aria-describedby="universityName" placeholder="University name"/>
+                                aria-describedby="universityName" placeholder="University name" />
                         </div>
                         <div class="form-group">
                             <label for="degree">Degree</label>
-                            <input type="text" class="form-control" id="degree"
-                                aria-describedby="degree" placeholder="University name"/>
+                            <input type="text" class="form-control" id="degree" aria-describedby="degree"
+                                placeholder="University name" />
                         </div>
                         <div class="form-group">
                             <label for="joinDate">Date</label>
-                            <input type="text" class="form-control" id="joinDate"
-                                aria-describedby="joinDate" placeholder="Join date"/>
+                            <input type="text" class="form-control" id="joinDate" aria-describedby="joinDate"
+                                placeholder="Join date" />
                         </div>
                         <div class="form-group">
                             <label for="roleSummary">Description</label>
-                            <textarea class="form-control" id="roleSummary"
-                                aria-describedby="roleSummary" rows="5">Summarize your role</textarea>
+                            <textarea class="form-control" id="roleSummary" aria-describedby="roleSummary"
+                                rows="5">Summarize your role</textarea>
                         </div>
                         <button type="submit" class="btn btn-outline-secondary">Save</button>
                         <button type="button" class="btn btn-link" data-dismiss="modal">Cancel</button>
@@ -366,8 +363,7 @@
     </div>
 
     <!-- Profile Modal -->
-    <div class="modal fade" id="addSkillModal" tabindex="-1" aria-labelledby="addSkillModalLabel"
-        aria-hidden="true">
+    <div class="modal fade" id="addSkillModal" tabindex="-1" aria-labelledby="addSkillModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -380,8 +376,7 @@
                     <form>
                         <div class="form-group">
                             <label for="skill">Skill</label>
-                            <input class="form-control" id="skill"
-                                aria-describedby="skill"/>
+                            <input class="form-control" id="skill" aria-describedby="skill" />
                         </div>
                         <button type="submit" class="btn btn-outline-secondary">Save</button>
                         <button type="button" class="btn btn-link" data-dismiss="modal">Cancel</button>
@@ -496,5 +491,11 @@
             </div>
     </footer>
 </body>
-
+<script type="text/javascript" src="assets/js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="assets/js/popper.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/vendors/slim-scroll-1.3.3/slimscroll.min.js"></script>
+<script type="text/javascript" src="assets/vendors/daterangepicker/moment.min.js"></script>
+<script type="text/javascript" src="assets/vendors/daterangepicker/daterangepicker.js"></script>
+<script type="text/javascript" src="assets/js/custom.js"></script>
 </html>

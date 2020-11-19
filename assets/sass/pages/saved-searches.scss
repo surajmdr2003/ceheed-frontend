@@ -1,0 +1,63 @@
+.saved-searchespage-title {
+	h2 {
+		font-size: 30px;
+	}
+	p {
+		font-size: 14px;
+	}
+}
+
+.saved-searches-item {
+	position: relative;
+	padding-top: 15px;
+	margin-bottom: 30px;
+	border: solid 1px #e0e0e0;
+	border-radius: 2px;
+	.meta-tag {
+		position: absolute;
+		top: 0;
+		font-size: 12px;
+		left: 0;
+		padding: 4px 15px;
+		border-radius: 2px;
+	}
+	.card-title {
+		color: #594138;
+		font-size: 15px;
+		font-weight: bold;
+		margin-bottom: 15px;
+	}
+	.card-subtitle {
+		font-size: 12px;
+		color: #303030;
+		margin-bottom: 20px;
+		font-weight: normal;
+	}
+	.card-text {
+		font-size: 12px;
+		font-weight: bold;
+		color: #303030;
+	}
+	.btn {
+		height: auto;
+		padding: 0;
+	}
+	.cardfooter {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.btn {
+			color: #b82ebf;
+			font-size: 14px;
+			font-weight: bold;
+		}
+		i {
+			color: #b0b0b0;
+		}
+	}
+}
+.badge-tertiary {
+	color: #606060;
+	background-color: #f1f1f1;
+	font-weight: normal;
+}
