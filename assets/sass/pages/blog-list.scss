@@ -154,7 +154,6 @@
 	}
 	li {
 		a {
-           
 			justify-content: center;
 			display: inline-flex;
 			align-items: center;
@@ -162,8 +161,10 @@
 			border: solid 0.5px rgba(46, 113, 167, 0.2);
 			font-size: 13px;
 			height: 36px;
-            width: 36px;
+			width: 36px;
+			
             &:hover{
+				text-decoration: none;
                 background-color:  #24bf49;
                 color:#fff; 
             }
@@ -183,7 +184,8 @@
 		height: 36px;
 		width: 36px;
 		color: #fff;
-        background: #24bf49;
+		background: #24bf49;
+		
         @media (max-width: 768px) {
             height: 30px;
             width: 30px;

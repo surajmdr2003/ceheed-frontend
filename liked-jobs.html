@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Browser Jobs</title>
+    <title>ceheed - liked jobs</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -22,12 +22,12 @@
             <div class="collapse navbar-collapse primary-navigation" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li><a href="#">Home</a></li>
-                    <li class="active"><a href="#">Browse jobs</a></li>
+                    <li><a href="#">Browse jobs</a></li>
                     <li><a href="#">Career advice</a></li>
                     <li><a href="#">Upload your resume</a></li>
                 </ul>
                 <ul class="navbar-nav align-items-center secondary-menu">
-                    <li class="search-menu active"><span id="search-job"><i class="icon-search"></i></span></li>
+                    <li class="search-menu"><span id="search-job"><i class="icon-search"></i></span></li>
                     <li class="notification-menu dropdown">
                         <a href="#" data-toggle="dropdown">
                             <i class="icon-bell"></i>
@@ -78,7 +78,7 @@
                             <img src="./assets/images/avatar.svg" class="profile-icon align-self-center mr-3"
                                 alt="avatar">
                             <div class="media-body  align-self-center">
-                                <h6 class="mt-0">Your account</h6>
+                                <h6 class="mt-0">My Account</h6>
                             </div>
                         </div>
                         <ul class="dropdown-menu dropdown-menu-right profile-dropdown-menu">
@@ -94,7 +94,7 @@
                 </ul>
             </div>
         </nav>
-        <section id="job-search-section" class="job-search-section">
+        <section id="job-search-section" class="job-search-section hide">
             <div class="container">
                 <form class="row">
                     <div class="col">
@@ -126,83 +126,14 @@
     </header>
     <div class="main-container">
         <div class="container">
-            <div class="job-main-header">
-                <h1 class="job-detail-title">
-                    Designer jobs
-                </h1>
-                <span>520 jobs found</span>
+            <div class="page-title saved-searchespage-title">
+                <h2>Liked jobs</h2>
+                <p>5 liked searches</p>
             </div>
-            <div class="jobs-filter-block row no-gutters align-items-center">
-                <ul class="col mr-auto">
-                    <li class="dropdown">
-                        <button id="postedDate" class="btn btn-dropdown dropdown-toggle" type="button">
-                            Date posted
-                        </button>
-                    </li>
-                    <li class="dropdown">
-                        <button class="btn btn-dropdown dropdown-toggle" type="button" data-toggle="dropdown">
-                            Salary estimate
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">10k-20k</a>
-                            <a class="dropdown-item" href="#">20k-30k</a>
-                            <a class="dropdown-item" href="#">30k-40k</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <button class="btn btn-dropdown dropdown-toggle" type="button" data-toggle="dropdown">
-                            Job type
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Part Time</a>
-                            <a class="dropdown-item" href="#">Full Time</a>
-                            <a class="dropdown-item" href="#">Contract</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <button class="btn btn-dropdown dropdown-toggle" type="button" data-toggle="dropdown">
-                            Location
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Bhaktapur</a>
-                            <a class="dropdown-item" href="#">Lalitpur</a>
-                            <a class="dropdown-item" href="#">Kathmandu</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <button class="btn btn-dropdown dropdown-toggle" type="button" data-toggle="dropdown">
-                            Experience level
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Senior</a>
-                            <a class="dropdown-item" href="#">Mid level</a>
-                            <a class="dropdown-item" href="#">Junior</a>
-                            <a class="dropdown-item" href="#">Entry Level</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <button class="btn btn-dropdown dropdown-toggle" type="button" data-toggle="dropdown">
-                            Company
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">National</a>
-                            <a class="dropdown-item" href="#">International</a>
-                            <a class="dropdown-item" href="#">Semi International</a>
-                        </div>
-                    </li>
-                </ul>
-
-                <div class="job-filter-action-block">
-                    <span class="text-primary">Saved <i class="icon-check"></i></span>
-                    <span class="text-secondary">Save this search</span>
-                </div>
-            </div>
-
-            <div class="jobs-content row">
-                <div class="col-sm-4">
-                    <div id="jobList" class="job-list slimScroll">
-                        <!-- card starts -->
-                        <div class="card job-card active">
+            <div class="page-content">
+                <div class="row saved-searches-listing">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card job-card ">
                             <span class="badge badge-primary meta-tag">New</span>
                             <div class="card-body">
                                 <div class="card-tags">Apple Inc | Remote | Full time</div>
@@ -215,8 +146,9 @@
                                 <a href="#" class="card-link"><i class="icon-heart"></i></a>
                             </div>
                         </div>
-                        <!-- card ends -->
-                        <!-- card starts -->
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
                         <div class="card job-card ">
                             <div class="card-body">
                                 <div class="card-tags">Apple Inc | Remote | Full time</div>
@@ -229,8 +161,9 @@
                                 <a href="#" class="card-link"><i class="icon-heart"></i></a>
                             </div>
                         </div>
-                        <!-- card ends -->
-                        <!-- card starts -->
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
                         <div class="card job-card ">
                             <div class="card-body">
                                 <div class="card-tags">Apple Inc | Remote | Full time</div>
@@ -243,8 +176,9 @@
                                 <a href="#" class="card-link"><i class="icon-heart"></i></a>
                             </div>
                         </div>
-                        <!-- card ends -->
-                        <!-- card starts -->
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
                         <div class="card job-card ">
                             <div class="card-body">
                                 <div class="card-tags">Apple Inc | Remote | Full time</div>
@@ -257,8 +191,9 @@
                                 <a href="#" class="card-link"><i class="icon-heart"></i></a>
                             </div>
                         </div>
-                        <!-- card ends -->
-                        <!-- card starts -->
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
                         <div class="card job-card ">
                             <div class="card-body">
                                 <div class="card-tags">Apple Inc | Remote | Full time</div>
@@ -271,155 +206,13 @@
                                 <a href="#" class="card-link"><i class="icon-heart"></i></a>
                             </div>
                         </div>
-                        <!-- card ends -->
-                    </div>
-                    <div class="jobs-pagiblock">
-                        <div class="page-no">Page 1 of 5</div>
-                        <div class="pagi-nav">
-                            <span>Prev</span>
-                            <span>Next</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-8">
-                    <!-- job-detail-card starts -->
-                    <div id="job-detail" class="card job-detail-card">
-                        <div class="card-header">
-                            <div class="card-tags">Apple Inc | Remote | Full time</div>
-                            <h5 class="card-title">HealthEdge Configuration designer</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">$3,000 - $5,000 a month</h6>
-                            <ul class="inline-list">
-                                <li><a href="#" class="btn btn-secondary">Apply at company site </a></li>
-                                <li><span class="fav-job"><i class="icon-heart-line"></i></span></li>
-                            </ul>
-                        </div>
-                        <div class="card-body">
-                            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <a class="nav-link active" id="job-description-tab" data-toggle="tab"
-                                        href="#jobDescriptionTab" role="tab" aria-controls="job description"
-                                        aria-selected="true">JOB DESCRIPTION</a>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <a class="nav-link" id="about-compay-tab" data-toggle="tab" href="#aboutCompayTab"
-                                        role="tab" aria-controls="about-compay-tab" aria-selected="false">ABOUT
-                                        COMPANY</a>
-                                </li>
-                            </ul>
-                            <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active" id="jobDescriptionTab" role="tabpanel"
-                                    aria-labelledby="job-description-tab">
-                                    <p>Sinclair Digital is a division of Sinclair Broadcast Group with dual headquarters
-                                        in
-                                        Seattle, WA and Hunt Valley, MD. Sinclair Digital was formed in February of 2014
-                                        with
-                                        the
-                                        goal of making the nation’s largest broadcaster a leader in digital media and
-                                        content
-                                        distribution on all platforms. In the past 5 years, Sinclair Digital has amassed
-                                        a
-                                        100+person team of innovative leaders, designers, developers and testers that
-                                        are
-                                        launching
-                                        digital properties and new brands on web, mobile, and ott devices that reach
-                                        more then
-                                        40
-                                        million people every month. This effort is powered by a proprietary media
-                                        management and
-                                        publishing platform that automates processes and production of content in unique
-                                        and
-                                        compelling ways.</p>
-
-                                    <h4>REQUIREMENTS</h4>
-                                    <ul class="list-unstyled">
-
-                                        <li> A current portfolio that includes design work in a variety of products that
-                                            have
-                                            shipped</li>
-                                        <li> 2+ years as a UX designer, product designer, mobile designer, or similar
-                                        </li>
-                                        <li> Strong organizational and time management skills</li>
-                                        <li> Expertly skilled at taking an ambiguous problem and seeking concrete
-                                            answers</li>
-                                        <li> Demonstrated understanding of information hierarchy and typography </li>
-                                        <li> Ability to take initiative and move a project from inception to launch</li>
-                                        <li> Mastery of Sketch or similar interface design tools</li>
-                                        <li> Experience building and maintaining design pattern libraries</li>
-                                        <li> Experience with low to medium fidelity prototyping tools</li>
-                                        <li> Broadcast Group with dual headquarters in Seattle, WA and Hunt Valley, MD.
-                                        </li>
-                                        <li> a division of Sinclair headquarters in Seattle, WA and Hunt Valley, MD.
-                                        </li>
-
-
-                                    </ul>
-                                </div>
-                                <div class="tab-pane fade" id="aboutCompayTab" role="tabpanel"
-                                    aria-labelledby="aboutCompayTab">
-                                    Mercy Corps is a leading global organization powered by the belief that a better
-                                    world is possible. In disaster, in hardship, in more than 40 countries around the
-                                    world, we partner to put bold solutions into action - helping people triumph over
-                                    adversity and build stronger communities from within. Now, and for the future. Mercy
-                                    Corps has been operating in Nepal since 2005, implementing programs in food
-                                    security, agriculture, market development, financial services, youth engagement,
-                                    climate change adaptation and disaster risk reduction.
-
-                                    “Fostering a diverse and open workplace is an important part of Mercy Corps’ vision,
-                                    and we encourage people from all backgrounds, especially women and members of
-                                    disadvantaged groups to apply. Mercy Corps is an Equal Opportunity Employer”.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--job-detail-card ends -->
-                </div>
-            </div>
-
-            <div class="video-section">
-                <div class="section-title">
-                    <h4>Training videos <a href="#" class="text-secondary ml-3">See all</a></h3>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/DgWUX8dPK7U" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                    <div class="col-sm-4">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/DgWUX8dPK7U" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                    <div class="col-sm-4">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/DgWUX8dPK7U" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="registernow-wrapper">
-        <div class="container">
-            <div class="registernow-wrap default-padding">
-                <div class="registernow-content">
-                    <div class="register-now-title">
-                        <span> WE MATCH </span> EMPLOYERS
-                        <span> WITH </span> RIGHT CANDIDATES
-                    </div>
-                    <div class="text">
-                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </span>
-                    </div>
-                    <a href="#" title="" class="btn register-now-btn">
-                        register now
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <footer class="main-footer grey-divider">
+    <footer class="default-padding grey-divider">
         <div class="container">
             <div class="site-footer-wrapper">
                 <div class="row footer-menu-listing">
@@ -513,9 +306,9 @@
                         </div>
                         <div class="item col-md-2">
                             <ul class="social-share">
-                                <li><a href="#" title=""><i class="icon-facebook"></i></a></li>
-                                <li><a href="#" title=""><i class="icon-linkedin"></i></a></li>
-                                <li><a href="#" title=""><i class="icon-twitter"></i></a></li>
+                                <li><a href="#" title=""><i class="fab fa-facebook-square"></i></a></li>
+                                <li><a href="#" title=""><i class="fab fa-instagram-square"></i></a></li>
+                                <li><a href="#" title=""><i class="fab fa-twitter-square"></i></a></li>
                             </ul>
                         </div>
                     </div>

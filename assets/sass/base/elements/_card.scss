@@ -1,12 +1,15 @@
 // job-card
 
-.card.job-card {
-	padding: 40px 20px 20px;
+.job-card {
+	padding: 30px 20px 20px;
     display: inline-flex;
     max-width: 370px;
     border-radius: 2px;
     border: solid 1px #e0e0e0;
-
+	@media (max-width: 768px) {
+		display:flex;
+		max-width: 100%;
+	}
     .meta-tag {
         position: absolute;
         border-radius: 2px;
@@ -51,7 +54,10 @@
     }
     .card-link {
         color: #594138;
-        font-size: 16px;
+		font-size: 16px;
+		i{
+			color:#b82ebf;
+		}
     }    
 }
 

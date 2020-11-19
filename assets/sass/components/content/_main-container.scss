@@ -105,7 +105,11 @@
 .slimScroll {
     height: 100vh;
     overflow: hidden;
-    position: relative;
+    position: relative; 
+
+    &.mac-os {
+        overflow: scroll;
+    }
 }
 
 .scroll {
