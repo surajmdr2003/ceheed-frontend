@@ -31,9 +31,6 @@ jQuery(document).ready(function(){
                     one.resetValues();
                 }
             }
-            else{
-                document.write("For Mac users, this custom slimscroll styles will not be applied");
-            }
         }
     } 
 
@@ -50,10 +47,26 @@ jQuery(document).ready(function(){
         $(this).toggleClass('active');
     })
 
+    $("#imgInp").change(function(){
+        readURL(this);
+    });
+
     
     
 })
 
 function cb(selectedDate) {
     $('#postedDate').html(selectedDate.format('MMMM D, YYYY'));
+}
+
+function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        
+        reader.onload = function (e) {
+            $('#profileThumb').css('background-image', "url(" + e.target.result + ")");
+        }
+        
+        reader.readAsDataURL(input.files[0]);
+    }
 }
