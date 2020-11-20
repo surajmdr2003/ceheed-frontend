@@ -1,0 +1,48 @@
+
+// faq-page
+
+.contact-info-card {
+	border: 1px solid #e0e0e0;
+	.card-title {
+		font-size: 15px;
+		font-weight: bold;
+		margin-bottom: 15px;
+	}
+	.card-body {
+		ul {
+			list-style: none;
+			padding-left: 0;
+			color: #303030;
+			li {
+				margin-bottom: 10px;
+				font-size: 13px;
+				i{
+					color: #b0b0b0;
+					font-size: 15px;
+					display: inline-block;
+					margin-right: 10px;
+					@media (max-width: 991px) {
+						font-size:13px;
+					}
+				}
+			}
+		}
+	}
+	border-radius: 0;
+	p {
+		font-size: 13px;
+		color: #404040;
+	}
+	.card-secondary {
+		font-size: 14px;
+	}
+	.text-secondary {
+		font-size: 14px;
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
+	h6 {
+		font-size: 13px;
+		margin-bottom: 15px;
+	}
+}
