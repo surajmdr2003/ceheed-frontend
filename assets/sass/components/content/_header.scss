@@ -8,10 +8,14 @@
 
     .navbar {
         padding: 12.5px 30px;
-        border: 1px solid #f1f1f1;
-        
-        &.no-menu {
-            padding: 17.5px 30px;  
+        border-bottom: 1px solid #f1f1f1;
+
+        @include big-desktop-down() {
+            padding: 12.5px 20px;
+        }
+
+        @include desktop-down() {
+            padding: 12.5px 15px;
         }
 
         .brand-logo {
@@ -22,11 +26,30 @@
             padding-bottom: 10px;
         }
 
+        .navbar-collapse {
+            @include desktop-down() {
+                margin-top: 10px;
+            }
+        }
+
 		.navbar-nav > li {
             padding: 12px 30px;
 
+            @include big-desktop-down() {
+                padding: 12px 20px;
+            }
+
+            @include desktop-down() {
+                border-top: 1px solid #eaeaea;
+                padding: 12px 0;
+            }
+
             &:first-child {
-				padding-left: 15px;
+                padding-left: 15px;
+                
+                @include desktop-down() {
+                    padding-left: 0;
+                }
             }
              
 			a {
@@ -44,43 +67,61 @@
             }
         }
         
-        ul.secondary-menu > li {
-            padding: 0 25px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-            border-right: 1px solid #f1f1f1;
-
-            &:last-child {
-                padding-right: 0;
-                border-right: 0;
+        ul.secondary-menu {
+            @include desktop-down() {
+                flex-direction: row;
+                justify-content: center;
+                padding-top: 10px;
+                border-top: 1px solid #eaeaea;
             }
 
-            &.login-signup > span {
-                margin: 0 5px;
-            }
-
-            &.notification-menu.dropdown {
-                border-right: 0 !important;
-                padding-right: 0 !important;
-            }
-
-            &.employeer-link > a {
-                color: #374abf;
-            
-                &:hover {
-                    color: #2f3fa8;
+            > li {
+                padding: 0 25px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                border-right: 1px solid #f1f1f1;
+    
+                @include big-desktop-down() {
+                    padding: 0 20px;
                 }
-            }
-            
 
-            > a {
-                font-weight: 600;
-            }
-
-            .dropdown-menu {
-                margin: .9rem 0 0;
+                @include desktop-down() {
+                   border-top: 0;
+                }
+    
+                &:last-child {
+                    padding-right: 0;
+                    border-right: 0;
+                }
+    
+                &.login-signup > span {
+                    margin: 0 5px;
+                }
+    
+                &.notification-menu.dropdown {
+                    border-right: 0 !important;
+                    padding-right: 0 !important;
+                }
+    
+                &.employeer-link > a {
+                    color: #374abf;
+                
+                    &:hover {
+                        color: #2f3fa8;
+                    }
+                }
+                
+    
+                > a {
+                    font-weight: 600;
+                }
+    
+                .dropdown-menu {
+                    margin: .9rem 0 0;
+                    position: absolute;
+                }
             }
         }
 
@@ -89,10 +130,23 @@
             border-right: 5px solid transparent;
             border-left: 5px solid transparent;
             margin-left: 30px;
+
+            @include desktop-down() {
+                margin-left: 10px;
+            }
         }
     }
 
+    .no-menu  ul.secondary-menu {
+        @include desktop-down() {
+           padding-top: 0;
+           border: 0;
+        }
+         
+    }
 }
+
+
 
 .notification-menu {
     a > i {
@@ -160,6 +214,15 @@
     border: 1px solid $color__gray100;
     background-color: $color__white;
     min-width: size(380);
+
+    @include desktop-down() {
+        transform: translateX(50%);
+    }
+
+    @include phone-only() {
+        min-width: size(280);
+        transform: translateX(70%);
+    }
 
     .notification-header {
         font-size: size(13);
@@ -240,6 +303,12 @@
 .job-search-section {
 	background-image: linear-gradient(to left, #6f37bf, #b82ebf 100%);
     padding: 20px 0;
+
+    .container {
+        @include desktop-down() {
+            max-width: 98%;
+        }
+    }
     
     .col {
         margin-bottom: 0 !important;
@@ -252,12 +321,21 @@
             width:100%;
         }
 
+        @include phone-only() {
+            min-width: 100%;
+        }
+
         &.action-col {
             display: flex;
             align-items: center;
             justify-content: space-between;
             @include tablet-landscape-down()  {
                 width: 100%;
+            }
+
+            @include  tablet-landscape-down() {
+                min-width: 100%;
+                padding-top: 10px;
             }
 
             .close-job-search-section {
@@ -286,6 +364,11 @@
             .form-control {
                 padding-left: 50px;
                 height: 60px;
+
+                @include phone-only() {
+                    padding-left: 50px;
+                    height: 48px;
+                }
             }
         }
         
@@ -303,12 +386,16 @@
         font-size: 18px;
         font-weight: bold;
         margin-bottom: 0 !important;
+        
         @include tablet-landscape-down()  {
             min-width: 100%;
-            margin-top: 20px;
         }
-        @include phone-only()  {
-            margin-top: 0;
+
+        @include phone-only() {
+            height: 48px;
+            min-width: 185px;
+            font-size: 16px;
+            font-weight: bold;
         }
     }
 }

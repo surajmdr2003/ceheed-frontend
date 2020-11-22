@@ -20,17 +20,32 @@
 }
 
 .jobs-filter-block {
-    margin-bottom: 30px;
+	margin-bottom: 30px;
+	
+
 
     ul {
         list-style: none;
         padding: 0;
         margin: 0;
         display: flex;
-        align-items: center;
+		align-items: center;
+		flex-wrap: wrap;
 
-        li:not(:last-child) {
-            margin-right: 10px;
+		@include desktop-down() {
+			margin-bottom: 10px;
+		}
+
+        li {
+			margin-right: 10px;
+			
+			@include desktop-down() {
+				margin-bottom: 10px;
+			}
+
+			&:last-child {
+				margin-right: 0;
+			}
         }
     }
 
@@ -47,8 +62,18 @@
 			margin-left: 10px;
 		}
     }
-    
+	
+	.col {
+		@include desktop-down() {
+			min-width: 100%;
+		}
+
+	}
     .job-filter-action-block {
+		@include desktop-down() {
+			min-width: 100%;
+		}
+
         span {
             cursor: pointer; 
 
@@ -63,7 +88,7 @@
     margin-bottom: 20px;
 
     .job-card:last-child {
-        margin-bottom: 15px;
+        margin-bottom: 0;
     }
 }
 
@@ -71,7 +96,8 @@
     font-size: 12px;
     color: #707070;
     display: flex;
-    justify-content: space-between;
+	justify-content: space-between;
+	margin-bottom: 20px;
 
     .pagi-nav span {
         cursor: pointer;
@@ -105,7 +131,11 @@
 .slimScroll {
     height: 100vh;
     overflow: hidden;
-    position: relative; 
+	position: relative; 
+	
+	@include tablet-landscape-down() {
+		height: auto !important;
+	}
 
     &.mac-os {
         overflow: scroll;
@@ -211,7 +241,22 @@ $overlay_opacity: 0.3; // 0-1
         font-weight: bold;
         line-height: 1.29;
         color: #ffffff;
-        margin-bottom: 50px;
+		margin-bottom: 50px;
+		
+		@include desktop-down() {
+			font-size: 60px;
+			margin-bottom: 45px;
+		}
+
+		@include tablet-landscape-down() {
+			font-size: 50px;
+			margin-bottom: 40px;
+		}
+
+		@include phone-only() {
+			font-size: 38px;
+			margin-bottom: 35px;
+		}
     }
 
     ul {
@@ -221,14 +266,33 @@ $overlay_opacity: 0.3; // 0-1
         display: inline-flex;
 
         li:not(:last-child) {
-            margin-right: 30px;
+			margin-right: 30px;
+
+			@include phone-only() {
+				margin-right: 15px;
+			}
         }
 
         .btn {
             text-transform: uppercase;
             padding: 18px 40px;
             font-size: 16px;
-            font-weight: 800;        
+			font-weight: 800; 
+	
+			@include tablet-landscape-down() {
+				padding: 15px 30px;
+				font-size: 15px;
+				font-weight: 700;
+			}
+	
+			@include phone-only() {
+				padding: 15px;
+				height: 50px;
+			}
+
+			@media (max-width: 325px) {
+				font-size: 13px;
+			}
         }
     }
 }

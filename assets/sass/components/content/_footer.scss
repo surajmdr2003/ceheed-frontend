@@ -1,5 +1,5 @@
 .default-padding{
-    padding:70px 0;
+    padding:70px 15px;
 }
 
 .registernow-wrap {
@@ -9,8 +9,10 @@
         text-align: center;
         color: $color__white;
         max-width: 540px;
+        width: 100%;
         margin: auto;
         padding:0 15px;
+
         .register-now-title {
             font-size: 40px;
             font-weight: 800;
@@ -20,6 +22,7 @@
             text-align: center;
             color: $color__white;
             margin-bottom: 20px;
+            
             @include tablet-landscape-down()  {
                 font-size:30px;
             }
@@ -100,6 +103,12 @@
 .social-share {
     display: flex;
     list-style: none;
+    padding-left: 0;
+
+    @include tablet-landscape-down() {
+        justify-content: center;
+        padding-top: 5px;
+    }
 
     li {
         padding: 0 8px;
@@ -116,8 +125,17 @@
     display: flex;
     list-style: none;
 
+    @include tablet-landscape-down() {
+        justify-content: center;
+        padding-top: 5px;
+    }
+
     li {
         padding-right: 30px;
+
+        @include big-desktop-down() {
+            padding-right: 8px;
+        }
 
         a {
             font-size: 12px;
@@ -131,6 +149,12 @@
 	padding-bottom: 25px;
     padding-top: 30px;
     border-top: solid 1px #f0f0f0;
+
+    @include tablet-landscape-down() {
+        padding-bottom: 20px;
+        padding-top: 20px;
+        text-align: center;
+    }
 
     .copyright-text {
         font-size: 12px;
@@ -197,7 +221,11 @@
 		min-width: 240px;
 		display: inline-flex;
 		align-items: center;
-		justify-content: center;
+        justify-content: center;
+        
+        @include phone-only()  {
+            min-width: 100%;
+        }
     }
     .text-muted{
         color:#303030 !important;
@@ -222,7 +250,11 @@
 	.nav-item {
 		margin-bottom: -1px;
 		padding: 0 15px;
-		margin: 0;
+        margin: 0;
+        
+        @include phone-only()  {
+            padding: 0 10px;
+        }
     }
     
     .nav-link {
@@ -231,7 +263,11 @@
         position:relative;
         font-size: 12px;
 		color: #808080;
-		font-weight: bold;
+        font-weight: bold;
+        
+        @include phone-only()  {
+            padding:10px 5px;
+        }
         
 		&:hover {
 			border: 0;
