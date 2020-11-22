@@ -48,6 +48,9 @@
         align-items: flex-end;
         background-size: cover;
         background-position: center;
+        @include tablet-landscape-down  {
+            padding:3rem 1rem;
+        }
 
         &:after {
             content: '';

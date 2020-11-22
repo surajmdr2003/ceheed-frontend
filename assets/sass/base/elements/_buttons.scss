@@ -1,3 +1,6 @@
+.btn{
+    height:60px;
+}
 .register-now-btn {
     font-size: 16px;
     font-weight: 800;
@@ -7,11 +10,15 @@
     text-transform: uppercase;
     padding: 18px 60px;
     display: inline-block;
+    @include phone-only()  {
+        padding: 18px 30px;
+        display: inline-flex;
+        font-size:13px;
+        height:40px;
+    }
 }
 
-.btn{
-    height:60px;
-}
+
 
 
 .dropdown-menu {

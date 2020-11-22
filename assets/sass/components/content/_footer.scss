@@ -4,13 +4,13 @@
 
 .registernow-wrap {
     background-image: linear-gradient(to left, #6f37bf, #b82ebf 100%);
-
+    
     .registernow-content {
         text-align: center;
         color: $color__white;
-        width: 510px;
+        max-width: 540px;
         margin: auto;
-
+        padding:0 15px;
         .register-now-title {
             font-size: 40px;
             font-weight: 800;
@@ -20,9 +20,20 @@
             text-align: center;
             color: $color__white;
             margin-bottom: 20px;
-
+            @include tablet-landscape-down()  {
+                font-size:30px;
+            }
+            @include phone-only()  {
+                font-size:24px;
+            }
             span {
                 font-size: 30px;
+                @include tablet-landscape-down () {
+                    font-size:24px;
+                }
+                @include phone-only()  {
+                    font-size:18px;
+                }
             }
         }
 
@@ -36,7 +47,11 @@
         }
     }
 }
-
+.registernow-wrap.default-padding {
+    @include phone-only()  {
+        padding:40px 0;
+    }
+}
 .footer-menu-listing {
     padding-bottom: 30px;
 }
@@ -268,11 +283,28 @@
 	}
 }
 .job-profile-wrap {
-	padding: 40px 0;
+    padding: 40px 0;
+    .col-lg-10{
+        padding-left: 30px;
+        @include big-desktop-down {
+                padding-left: 60px;
+        }
+        @include tablet-landscape-down  {
+                padding-left: 30px;
+        }
+        @include phone-only  {
+                padding-left: 15px;
+        }
+    }
+   
 }
 .user-profile-info {
     padding-top: 40px;
     padding-bottom: 60px;
+    @include tablet-landscape-down  {
+        padding-top: 15px;
+        padding-bottom: 30px;
+    }
     
 	h2 {
 		font-size: 30px;
@@ -296,6 +328,10 @@
 // user profile feature block
 
 .user-profile-feature-block {
+    @include tablet-landscape-down  {
+       padding-bottom: 15px;
+    }
+
 	h3 {
 		font-size: 18px;
 		font-weight: bold;  
@@ -303,7 +339,10 @@
 	}
 	p {
 		margin-bottom: 30px;
-		font-size: 13px;
+        font-size: 13px;
+        @include tablet-landscape-down  {
+            margin-bottom: 15px;
+        }
 	}
     padding-bottom: 30px;
     
@@ -314,6 +353,9 @@
         li {
             border-bottom: 1px solid #ccc;
             margin-bottom: 30px;
+            @include tablet-landscape-down  {
+                margin-bottom: 15px;
+            }
             &:last-child {
                 margin-bottom: 0;
                 border: 0;

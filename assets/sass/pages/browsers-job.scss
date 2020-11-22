@@ -1,17 +1,12 @@
 // browser-jobs-page
-.job-search-section.large-block {
-	min-height: 400px;
-	padding-top: 60px;
-	h2 {
-		font-size: 24px;
-		color: #fff;
-		margin-bottom: 30px;
-	}
-}
 
 .job-search-section.large-block {
 	min-height: 400px;
 	padding-top: 60px;
+	@include tablet-landscape-down()  {
+		min-height: 430px;
+	}
+	
 	h2 {
 		font-size: 24px;
 		color: #fff;
@@ -25,7 +20,7 @@
 	margin-bottom: 60px;
 	border: 1px solid #f1f1f1;
 	.card-group {
-		@media (max-width: 768px) {
+		@include tablet-landscape-down()  {
 			flex-direction: column;
 		}
 		.card-body {
@@ -54,7 +49,7 @@
 			border: 0;
 			border-right: 1px solid #f1f1f1;
 			
-			@media (max-width: 768px) {
+			@include tablet-landscape-down()  {
 				border-right: 0;
 				border-bottom: 1px solid #f1f1f1;
 				&:last-child{
@@ -94,7 +89,7 @@
 		border-radius: 0;
 		border: 1px solid #f1f1f1;
 		background-color: #fafafa;
-		@media (max-width: 768px) {
+		@include tablet-landscape-down()  {
 			margin-bottom: 30px;
 		}
 		.card-body {
@@ -148,6 +143,7 @@
 	.card-body {
 		background: #fafafa;
 		padding:40px 20px;
+		border:1px solid #f1f1f1;
 		ul {
 			list-style: none;
 			padding-left: 0;

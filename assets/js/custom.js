@@ -1,4 +1,5 @@
 jQuery(document).ready(function(){
+
     $('#search-job').click(function() {
         $('#job-search-section').slideToggle();
         $(this).parent('li').toggleClass('active');
@@ -75,7 +76,24 @@ jQuery(document).ready(function(){
         $('#jobsByEducation').slick({
             infinite: true,
             slidesToShow: 3,
-            slidesToScroll: 3 
+            slidesToScroll: 3,
+            autoPlay:true,
+            responsive: [
+                    {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 568,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
         });
     }
 })

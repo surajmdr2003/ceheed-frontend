@@ -16,10 +16,19 @@
 	}
 }
 .profile-tab-wrapper {
+	@include phone-only()  {
+		.flex-column {
+			margin: 0 -10px 30px;
+			flex-direction: row !important;
+		}
+	}
 	.nav-link {
 		color: #606060;
 		padding: 20px 0;
 		border-radius: 0;
+		@include phone-only()  {
+            padding: 0 8px 5px;
+        }
 		&:focus {
 			outline: none;
 		}
@@ -33,6 +42,10 @@
 		background: none;
 		font-weight: bold;
 		border-right: 2px solid #b82ebf;
+		@include phone-only()  {
+			border-right: 0;
+			border-bottom: 1px solid #b82ebf;
+        }
 	}
 	.tab-content {
 		h4 {
@@ -50,6 +63,9 @@
 	.tab-pane {
 		.tab-content {
 			padding-left: 50px;
+			@include phone-only()  {
+				padding-left: 0;
+			}
 		}
 	}
 }

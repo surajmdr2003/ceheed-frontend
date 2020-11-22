@@ -244,11 +244,21 @@
     .col {
         margin-bottom: 0 !important;
         padding-bottom: 0 !important;
+        @include tablet-landscape-down()  {
+            flex: auto;
+            width: 50%;
+        }
+        @include phone-only()  {
+            width:100%;
+        }
 
         &.action-col {
             display: flex;
             align-items: center;
             justify-content: space-between;
+            @include tablet-landscape-down()  {
+                width: 100%;
+            }
 
             .close-job-search-section {
                 cursor: pointer;
@@ -260,6 +270,9 @@
         .form-group {
             position: relative;
             margin-bottom: 0;
+            @include tablet-landscape-down()  {
+                margin-bottom: 15px;
+            }
 
             i {
                 font-size: 18px;
@@ -290,6 +303,13 @@
         font-size: 18px;
         font-weight: bold;
         margin-bottom: 0 !important;
+        @include tablet-landscape-down()  {
+            min-width: 100%;
+            margin-top: 20px;
+        }
+        @include phone-only()  {
+            margin-top: 0;
+        }
     }
 }
 
