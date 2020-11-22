@@ -11,7 +11,7 @@
 <body>
     <header class="main-header">
         <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand brand-logo" href="#">
+            <a class="navbar-brand brand-logo" href="./index.html">
                 <img src="./assets/images/ceheed-logo.svg" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -21,76 +21,19 @@
 
             <div class="collapse navbar-collapse primary-navigation" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Browse jobs</a></li>
-                    <li><a href="#">Career advice</a></li>
-                    <li><a href="#">Upload your resume</a></li>
+                    <li><a href="./browse-jobs.html">Home</a></li>
+                    <li><a href="./joblist.html">Browse jobs</a></li>
+                    <li><a href="./terms-conditions.html">Career advice</a></li>
+                    <li><a href="./upload-resume.html">Upload your resume</a></li>
                 </ul>
                 <ul class="navbar-nav align-items-center secondary-menu">
                     <li class="search-menu"><span id="search-job"><i class="icon-search"></i></span></li>
-                    <li class="notification-menu dropdown">
-                        <a href="#" data-toggle="dropdown">
-                            <i class="icon-bell"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right notification-dropdown-menu">
-                            <div class="notification-header">
-                                Notifications <a href="./all-notifications.html" class="text-primary btn-link">See
-                                    All</a>
-                            </div>
-                            <ul class="notifications list-unstyled">
-                                <li class="media">
-                                    <span class="icon-box mr-3">
-                                        <i class="icon-angle-right"></i>
-                                    </span>
-                                    <div class="media-body">
-                                        <h5>Adds responsive display ads</h5>
-                                        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
-                                            sollicitudin.</p>
-                                        <a href="#" class="btn-link">Notify Sales</a>
-                                    </div>
-                                </li>
-                                <li class="media">
-                                    <span class="icon-box mr-3">
-                                        <i class="icon-angle-right"></i>
-                                    </span>
-                                    <div class="media-body">
-                                        <h5>List-based media object</h5>
-                                        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
-                                            sollicitudin.</p>
-                                    </div>
-                                </li>
-                                <li class="media">
-                                    <span class="icon-box mr-3">
-                                        <i class="icon-angle-right"></i>
-                                    </span>
-                                    <div class="media-body">
-                                        <h5>List-based media object</h5>
-                                        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
-                                            sollicitudin. Cras purus odio,</p>
-                                        <a href="#" class="btn-link">See Report</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                    <li class="login-signup">
+                        <a href="./login.html">Sign in</a>
+                        <span>or</span>
+                        <a href="./register.html">Register</a>
                     </li>
-                    <li class="profile-menu dropdown">
-                        <div class="menu-profile media dropdown-toggle" data-toggle="dropdown">
-                            <img src="./assets/images/avatar.svg" class="profile-icon align-self-center mr-3"
-                                alt="avatar">
-                            <div class="media-body  align-self-center">
-                                <h6 class="mt-0">My Account</h6>
-                            </div>
-                        </div>
-                        <ul class="dropdown-menu dropdown-menu-right profile-dropdown-menu">
-                            <a class="dropdown-item" href="#">Dashboard</a>
-                            <a class="dropdown-item" href="#">Saved searches</a>
-                            <a class="dropdown-item" href="#">Liked jobs</a>
-                            <a class="dropdown-item" href="#">Applied jobs</a>
-                            <a class="dropdown-item" href="#">Recommended jobs</a>
-                            <a class="dropdown-item" href="#">Settings</a>
-                            <a class="dropdown-item" href="#">Sign out</a>
-                        </ul>
-                    </li>
+                    <li class="employeer-link"><a href="#">For employeers</a></li>
                 </ul>
             </div>
         </nav>
@@ -117,7 +60,6 @@
                     </div>
                     <div class="col action-col">
                         <button type="submit" class="btn btn-primary mb-2">Search jobs</button>
-                        
                     </div>
                 </form>
             </div>
@@ -128,7 +70,7 @@
             <section class="jobs-by-type">
                 <div class="card-group">
                     <div class="card">
-                        <div class="card-body">
+                        <a href="#" class="card-body">
                             <div class="card-content">
                                 <h5 class="card-title">Graduate jobs</h5>
                                 <p class="card-text">1200 jobs available</p>
@@ -136,10 +78,10 @@
                             <div class="card-icon">
                                 <i class="icon-angle-right"></i>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="card">
-                        <div class="card-body">
+                        <a href="#" class="card-body">
                             <div class="card-content">
                                 <h5 class="card-title">Remote jobs</h5>
                                 <p class="card-text">1200 jobs available</p>
@@ -147,10 +89,10 @@
                             <div class="card-icon">
                                 <i class="icon-angle-right"></i>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="card">
-                        <div class="card-body">
+                        <a href="#" class="card-body">
                             <div class="card-content">
                                 <h5 class="card-title">Other jobs</h5>
                                 <p class="card-text">1200 jobs available</p>
@@ -159,7 +101,7 @@
                             <div class="card-icon">
                                 <i class="icon-angle-right"></i>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -373,7 +315,7 @@
         </div>
     </div>
 
-    <footer class="default-padding grey-divider">
+    <footer class="main-footer grey-divider">
         <div class="container">
             <div class="site-footer-wrapper">
                 <div class="row footer-menu-listing">
@@ -467,9 +409,9 @@
                         </div>
                         <div class="item col-md-2">
                             <ul class="social-share">
-                                <li><a href="#" title=""><i class="fab fa-facebook-square"></i></a></li>
-                                <li><a href="#" title=""><i class="fab fa-instagram-square"></i></a></li>
-                                <li><a href="#" title=""><i class="fab fa-twitter-square"></i></a></li>
+                                <li><a href="#" title=""><i class="icon-facebook"></i></a></li>
+                                <li><a href="#" title=""><i class="icon-linkedin"></i></a></li>
+                                <li><a href="#" title=""><i class="icon-twitter"></i></a></li>
                             </ul>
                         </div>
                     </div>

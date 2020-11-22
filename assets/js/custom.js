@@ -42,8 +42,21 @@ jQuery(document).ready(function(){
         showDropdowns: true,
     },  cb);
 
+    $('#careerJoinDate').daterangepicker({
+        showDropdowns: true,
+      }, function(start, end, label) {
+        console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+    });
+
+    $('#educationJoinDate').daterangepicker({
+        showDropdowns: true,
+      }, function(start, end, label) {
+        console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+    });
+
+
     $('.dropdown-item').click(function(){
-        $(this).parent().siblings('.dropdown-toggle').html($(this).text());
+        $(this).parent().siblings('.btn-filter-dropdown').html($(this).text());
     });
 
     $('.fav-job').click(function() {
@@ -54,13 +67,17 @@ jQuery(document).ready(function(){
         readURL(this);
     });
 
-    $('#jobsByEducation').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3
-    });
-    
-    
+    if($('.jquery-background-video').length > 0) {
+        $('.jquery-background-video').bgVideo();
+    }
+
+    if($('#jobsByEducation').length) {
+        $('#jobsByEducation').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3 
+        });
+    }
 })
 
 function cb(selectedDate) {

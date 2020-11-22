@@ -38,7 +38,6 @@
 }
 
 .footer-menu-listing {
-    border-bottom: solid 1px #f0f0f0;
     padding-bottom: 30px;
 }
 
@@ -114,8 +113,9 @@
 }
 
 .copyright-section {
-	padding-bottom: 40px;
-	padding-top: 30px;
+	padding-bottom: 25px;
+    padding-top: 30px;
+    border-top: solid 1px #f0f0f0;
 
     .copyright-text {
         font-size: 12px;
@@ -358,7 +358,8 @@
     font-size: 13px;
 }
 
-
-.main-footer {
-    padding-top: 80px;
+.copyright-content {
+    ul {
+        margin-bottom: 0;
+    }
 }

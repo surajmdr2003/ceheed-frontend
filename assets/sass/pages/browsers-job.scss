@@ -33,11 +33,27 @@
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+
+			&:hover {
+				text-decoration: none;
+
+				.card-icon {
+					-webkit-animation-name: hvr-icon-wobble-horizontal;
+					animation-name: hvr-icon-wobble-horizontal;
+					-webkit-animation-duration: 1s;
+					animation-duration: 1s;
+					-webkit-animation-timing-function: ease-in-out;
+					animation-timing-function: ease-in-out;
+					-webkit-animation-iteration-count: 1;
+					animation-iteration-count: 1;
+				}
+			}
 		}
 		.card {
 			border-radius: 0;
 			border: 0;
 			border-right: 1px solid #f1f1f1;
+			
 			@media (max-width: 768px) {
 				border-right: 0;
 				border-bottom: 1px solid #f1f1f1;
@@ -45,6 +61,11 @@
 					border-bottom: 0;;
 				}
 			}
+
+			&:last-child {
+				border-right: 0;
+			}
+			
 			.card-title {
 				font-size: 15px;
 				font-weight: bold;
@@ -166,3 +187,69 @@
 		border-radius: 0;
 	}
 }
+
+
+/* Icon Wobble Horizontal */
+@-webkit-keyframes hvr-icon-wobble-horizontal {
+	16.65% {
+	  -webkit-transform: translateX(10px);
+	  transform: translateX(10px);
+	}
+	33.3% {
+	  -webkit-transform: translateX(-5px);
+	  transform: translateX(-5px);
+	}
+	49.95% {
+	  -webkit-transform: translateX(4px);
+	  transform: translateX(4px);
+	}
+	66.6% {
+	  -webkit-transform: translateX(-2px);
+	  transform: translateX(-2px);
+	}
+	83.25% {
+	  -webkit-transform: translateX(1px);
+	  transform: translateX(1px);
+	}
+	100% {
+	  -webkit-transform: translateX(0);
+	  transform: translateX(0);
+	}
+  }
+  
+  @keyframes hvr-icon-wobble-horizontal {
+	16.65% {
+	  -webkit-transform: translateX(10px);
+	  transform: translateX(10px);
+	}
+	33.3% {
+	  -webkit-transform: translateX(-5px);
+	  transform: translateX(-5px);
+	}
+	49.95% {
+	  -webkit-transform: translateX(4px);
+	  transform: translateX(4px);
+	}
+	66.6% {
+	  -webkit-transform: translateX(-2px);
+	  transform: translateX(-2px);
+	}
+	83.25% {
+	  -webkit-transform: translateX(1px);
+	  transform: translateX(1px);
+	}
+	100% {
+	  -webkit-transform: translateX(0);
+	  transform: translateX(0);
+	}
+  }
+  
+  .hvr-icon-wobble-horizontal {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+  }

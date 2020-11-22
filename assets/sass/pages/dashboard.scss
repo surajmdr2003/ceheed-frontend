@@ -1,0 +1,142 @@
+.card-video-resume {
+    margin-bottom: 40px;
+    background-color: $secondary;
+    color: $color__white;
+    .card-body {
+        padding: 30px 30px 50px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .card-content {
+            .card-title {
+                font-size: 20px;
+                font-weight: bold;
+                line-height: 1;
+                color: #ffffff;
+            }
+    
+            .card-text {
+                font-size: 14px;
+                line-height: 2.07;
+                margin-bottom: 20px;
+            }
+    
+            .btn {
+                height: initial;
+                padding: 9px 30px;
+                font-size: 14px;
+                font-weight: 600;
+            }
+        }
+
+        .card-icon {
+            font-size: 85px;
+            line-height: 0;
+            padding-left: 15px;
+        }
+    }
+}
+
+.card-dashboard {
+    margin-bottom: 35px;
+
+    .card-header {
+        padding: 20px 30px 10px;
+        border: 0;
+        background-color: transparent;
+
+        h4 {
+            font-size: 15px;
+            font-weight: bold;
+            line-height: 1.2;
+            color: #303030;
+            margin-bottom: 0;
+        }
+    }
+
+    .card-body {
+        padding: 15px 30px;
+
+        .card-title {
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 1.67;
+            color: #404040;
+            margin-bottom: 7px;
+
+            .badge {
+                font-size: 12px;
+                border-radius: 3px;
+                margin-left: 7px;
+            }
+
+            &.text-primary {
+                font-size: 13px;
+
+                i {
+                    margin-left: 3px;
+                    font-size: 10px;
+                }
+            }
+        }
+        .card-text {
+            font-size: 12px;
+            line-height: 1.67;
+            color: #505050;
+        }
+
+        .btn-link {
+            font-size: 13px;
+            line-height: 1.85;
+            color: $secondary;
+            height: initial;
+            padding: 0;
+
+            &:after {
+                content: '';
+                font-family: "icomoon" !important;
+                speak: never;
+                font-style: normal;
+                font-weight: normal;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                font-size: 9px;
+                margin-left: 10px;
+                vertical-align: middle;
+            }
+
+            &:hover {
+                text-decoration: none;
+
+                &:after {
+                    -webkit-animation-name: hvr-icon-wobble-horizontal;
+                    animation-name: hvr-icon-wobble-horizontal;
+                    -webkit-animation-duration: 1s;
+                    animation-duration: 1s;
+                    -webkit-animation-timing-function: ease-in-out;
+                    animation-timing-function: ease-in-out;
+                    -webkit-animation-iteration-count: 1;
+                    animation-iteration-count: 1;
+                }
+            }
+        }
+    }
+
+    .progressbar-block {
+        margin-bottom: 40px;
+
+        .progress {
+            height: 10px;
+            background-color: #f1f1f1;
+            margin-bottom: 15px;
+    
+            .bg-warning {
+                background-color: #eccd1e !important;
+            }
+        }
+    }
+}

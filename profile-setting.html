@@ -21,13 +21,13 @@
 
             <div class="collapse navbar-collapse primary-navigation" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Browse jobs</a></li>
-                    <li><a href="#">Career advice</a></li>
-                    <li><a href="#">Upload your resume</a></li>
+                    <li><a href="./browse-jobs.html">Home</a></li>
+                    <li class="active"><a href="./joblist.html">Browse jobs</a></li>
+                    <li><a href="./terms-conditions.html">Career advice</a></li>
+                    <li><a href="./upload-resume.html">Upload your resume</a></li>
                 </ul>
                 <ul class="navbar-nav align-items-center secondary-menu">
-                    <li class="search-menu"><span id="search-job"><i class="icon-search"></i></span></li>
+                    <li class="search-menu active"><span id="search-job"><i class="icon-search"></i></span></li>
                     <li class="notification-menu dropdown">
                         <a href="#" data-toggle="dropdown">
                             <i class="icon-bell"></i>
@@ -78,17 +78,18 @@
                             <img src="./assets/images/avatar.svg" class="profile-icon align-self-center mr-3"
                                 alt="avatar">
                             <div class="media-body  align-self-center">
-                                <h6 class="mt-0">My Account</h6>
+                                <h6 class="mt-0">Your account</h6>
                             </div>
                         </div>
                         <ul class="dropdown-menu dropdown-menu-right profile-dropdown-menu">
-                            <a class="dropdown-item" href="#">Dashboard</a>
-                            <a class="dropdown-item" href="#">Saved searches</a>
-                            <a class="dropdown-item" href="#">Liked jobs</a>
-                            <a class="dropdown-item" href="#">Applied jobs</a>
-                            <a class="dropdown-item" href="#">Recommended jobs</a>
-                            <a class="dropdown-item" href="#">Settings</a>
-                            <a class="dropdown-item" href="#">Sign out</a>
+                            <a class="dropdown-item" href="./dashboard.html">Dashboard</a>
+                            <a class="dropdown-item" href="./profile.html">My Profile</a>
+                            <a class="dropdown-item" href="./saved-searches.html">Saved searches</a>
+                            <a class="dropdown-item" href="./liked-jobs.html">Liked jobs</a>
+                            <a class="dropdown-item" href="./applied-jobs.html">Applied jobs</a>
+                            <a class="dropdown-item" href="./recommended-jobs.html">Recommended jobs</a>
+                            <a class="dropdown-item" href="./profile-setting.html">Settings</a>
+                            <a class="dropdown-item" href="./login.html">Sign out</a>
                         </ul>
                     </li>
                 </ul>
@@ -259,14 +260,14 @@
                 <div class="modal-header">
                     <h5 class="modal-title" id="addSummaryModalLabel">Edit summary</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+                        <i class="icon-cross"></i>
                     </button>
                 </div>
                 <div class="modal-body">
                     <form>
                         <div class="form-group">
                             <label for="profileSummary">Personal Summary</label>
-                            <textarea class="form-control" id="profileSummary"
+                            <textarea class="form-control" rows="5" id="profileSummary"
                                 aria-describedby="profileSummary"></textarea>
                         </div>
                         <button type="submit" class="btn btn-outline-secondary">Save</button>
@@ -284,7 +285,7 @@
                 <div class="modal-header">
                     <h5 class="modal-title" id="addRoleModalLabel">Edit role</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+                        <i class="icon-cross"></i>
                     </button>
                 </div>
                 <div class="modal-body">
@@ -300,8 +301,8 @@
                                 placeholder="Company name" />
                         </div>
                         <div class="form-group">
-                            <label for="joinDate">Date</label>
-                            <input type="text" class="form-control" id="joinDate" aria-describedby="joinDate"
+                            <label for="careerJoinDate">Date</label>
+                            <input type="text" class="form-control" id="careerJoinDate" aria-describedby="careerJoinDate"
                                 placeholder="Join date" />
                         </div>
                         <div class="form-group">
@@ -324,7 +325,7 @@
                 <div class="modal-header">
                     <h5 class="modal-title" id="educationModalLabel">Edit Education</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+                        <i class="icon-cross"></i>
                     </button>
                 </div>
                 <div class="modal-body">
@@ -345,8 +346,8 @@
                                 placeholder="University name" />
                         </div>
                         <div class="form-group">
-                            <label for="joinDate">Date</label>
-                            <input type="text" class="form-control" id="joinDate" aria-describedby="joinDate"
+                            <label for="educationJoinDate">Date</label>
+                            <input type="text" class="form-control" id="educationJoinDate" aria-describedby="educationJoinDate"
                                 placeholder="Join date" />
                         </div>
                         <div class="form-group">
@@ -369,7 +370,7 @@
                 <div class="modal-header">
                     <h5 class="modal-title" id="addSkillModalLabel">Add skill</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+                        <i class="icon-cross"></i>
                     </button>
                 </div>
                 <div class="modal-body">
@@ -387,7 +388,7 @@
     </div>
 
 
-    <footer class="default-padding grey-divider">
+    <footer class="main-footer grey-divider">
         <div class="container">
             <div class="site-footer-wrapper">
                 <div class="row footer-menu-listing">
@@ -481,9 +482,9 @@
                         </div>
                         <div class="item col-md-2">
                             <ul class="social-share">
-                                <li><a href="#" title=""><i class="fab fa-facebook-square"></i></a></li>
-                                <li><a href="#" title=""><i class="fab fa-instagram-square"></i></a></li>
-                                <li><a href="#" title=""><i class="fab fa-twitter-square"></i></a></li>
+                                <li><a href="#" title=""><i class="icon-facebook"></i></a></li>
+                                <li><a href="#" title=""><i class="icon-linkedin"></i></a></li>
+                                <li><a href="#" title=""><i class="icon-twitter"></i></a></li>
                             </ul>
                         </div>
                     </div>
