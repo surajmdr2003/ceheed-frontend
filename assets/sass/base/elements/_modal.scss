@@ -1,0 +1,31 @@
+.modal-header {
+    border: 0;
+    padding: 1.5rem 1.5rem .5rem 1.5rem;
+
+    h5 {
+        font-size: 15px;
+        line-height: 1.2;
+        color: #303030;
+    }
+
+    .close {
+        font-size: 18px;
+    }
+}
+
+.modal-body {
+    padding: .5rem 1.5rem 1.5rem 1.5rem;
+
+    .btn {
+        height: initial;
+        padding: 7px 30px;
+        border-radius: 3px;
+        font-size: 14px;
+        font-weight: bold;
+
+        &.btn-link {
+            font-weight: normal;
+            color: #303030;
+        }
+    }
+}

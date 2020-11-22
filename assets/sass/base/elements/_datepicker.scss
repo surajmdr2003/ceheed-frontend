@@ -213,12 +213,12 @@
       }
   
       &.active {
-        background-color: #357ebd;
+        background-color: $primary;
         border-color: transparent;
         color: #fff;
   
         &:hover {
-          background-color: #357ebd;
+          background-color: $primary;
           border-color: transparent;
           color: #fff;
         }
@@ -297,6 +297,7 @@
       font-size: 12px;
       font-weight: bold;
       padding: 4px 8px;
+      height: initial;
     }
   
     &.show-ranges {

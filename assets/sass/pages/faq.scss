@@ -46,3 +46,15 @@
 		margin-bottom: 15px;
 	}
 }
+
+.accordion > .card > .card-header i {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+button.btn.btn-link.collapsed {
+	~ {
+		i {
+			transform: translateY(-50%) rotate(0deg);
+		}
+	}
+}
