@@ -20,6 +20,9 @@
                 font-size: 14px;
                 line-height: 2.07;
                 margin-bottom: 20px;
+                @include phone-only()  {
+                    font-size:12px;
+                }
             }
     
             .btn {
@@ -34,6 +37,10 @@
             font-size: 85px;
             line-height: 0;
             padding-left: 15px;
+            @include phone-only()  {
+                font-size: 40px;
+                padding-left: 15px;
+            }
         }
     }
 }

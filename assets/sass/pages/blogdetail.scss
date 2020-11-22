@@ -11,8 +11,9 @@
 	background-size: cover;
 	background-position: center;
     position: relative;
-    @media (max-width: 578px) {
-        height:400px;
+    @include phone-only()  {
+		height:350px;
+		padding-bottom: 15px;
     }
 	&:before {
 		content: '';
@@ -129,8 +130,11 @@
     padding-bottom: 60px;
 }
 .similar-post-item {
-    @media (max-width: 768px) {
-        margin-bottom: 40px;
+    @include tablet-landscape-down() {
+		margin-bottom: 40px;
+		&:last-child{
+			margin-bottom: 0;
+		}
     }
 	.imgholder {
 		img {
@@ -144,7 +148,7 @@
 			overflow: hidden;
 			height: 250px;
             position: relative;
-            @media (max-width: 768px) {
+			@include tablet-landscape-down() {
                 max-width: 100%;
             }
 		}
