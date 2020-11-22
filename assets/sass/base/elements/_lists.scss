@@ -33,8 +33,13 @@ dd {
 	margin: 0;
 	display: inline-flex;
 	align-items: center;
+	flex-wrap: wrap;
 
 	li:not(:last-child){
 		margin-right: 30px;
+
+		@include phone-only()  {
+            margin-right: 10px;
+        }
 	}
 }

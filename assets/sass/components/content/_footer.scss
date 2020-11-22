@@ -12,7 +12,7 @@
         width: 100%;
         margin: auto;
         padding:0 15px;
-        
+
         .register-now-title {
             font-size: 40px;
             font-weight: 800;
@@ -22,6 +22,7 @@
             text-align: center;
             color: $color__white;
             margin-bottom: 20px;
+            
             @include tablet-landscape-down()  {
                 font-size:30px;
             }
@@ -220,7 +221,11 @@
 		min-width: 240px;
 		display: inline-flex;
 		align-items: center;
-		justify-content: center;
+        justify-content: center;
+        
+        @include phone-only()  {
+            min-width: 100%;
+        }
     }
     .text-muted{
         color:#303030 !important;
@@ -245,7 +250,11 @@
 	.nav-item {
 		margin-bottom: -1px;
 		padding: 0 15px;
-		margin: 0;
+        margin: 0;
+        
+        @include phone-only()  {
+            padding: 0 10px;
+        }
     }
     
     .nav-link {
@@ -254,7 +263,11 @@
         position:relative;
         font-size: 12px;
 		color: #808080;
-		font-weight: bold;
+        font-weight: bold;
+        
+        @include phone-only()  {
+            padding:10px 5px;
+        }
         
 		&:hover {
 			border: 0;

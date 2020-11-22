@@ -8,7 +8,7 @@
 
     .navbar {
         padding: 12.5px 30px;
-        border: 1px solid #f1f1f1;
+        border-bottom: 1px solid #f1f1f1;
 
         @include big-desktop-down() {
             padding: 12.5px 20px;
@@ -16,10 +16,6 @@
 
         @include desktop-down() {
             padding: 12.5px 15px;
-        }
-        
-        &.no-menu {
-            padding: 17.5px 30px;  
         }
 
         .brand-logo {
@@ -141,7 +137,16 @@
         }
     }
 
+    .no-menu  ul.secondary-menu {
+        @include desktop-down() {
+           padding-top: 0;
+           border: 0;
+        }
+         
+    }
 }
+
+
 
 .notification-menu {
     a > i {
@@ -209,6 +214,15 @@
     border: 1px solid $color__gray100;
     background-color: $color__white;
     min-width: size(380);
+
+    @include desktop-down() {
+        transform: translateX(50%);
+    }
+
+    @include phone-only() {
+        min-width: size(280);
+        transform: translateX(70%);
+    }
 
     .notification-header {
         font-size: size(13);
@@ -375,7 +389,6 @@
         
         @include tablet-landscape-down()  {
             min-width: 100%;
-            margin-top: 20px;
         }
 
         @include phone-only() {
